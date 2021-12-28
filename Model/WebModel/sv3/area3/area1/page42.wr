@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area3#area1#page42" name="Modifica Data" gr:x="290" gr:y="1030">
+  <ContentUnits>
+    <EntryUnit id="sv3#area3#area1#page42#enu25" name="Inserisci dati Data" linkOrder="sv3#area3#area1#page42#enu25#ln112" gr:x="0" gr:y="0" fieldOrder="sv3#area3#area1#page42#enu25#fld148 sv3#area3#area1#page42#enu25#fld149 sv3#area3#area1#page42#enu25#fld150">
+      <Link id="sv3#area3#area1#page42#enu25#ln112" name="Flow58" to="sv3#area3#area1#mfu12" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area1#page42#enu25#ln112#par420" name="anno_anno" source="sv3#area3#area1#page42#enu25#fld150" target="sv3#area3#area1#mfu12.ent19#att46"/>
+        <LinkParameter id="sv3#area3#area1#page42#enu25#ln112#par421" name="giorno_giorno" source="sv3#area3#area1#page42#enu25#fld148" target="sv3#area3#area1#mfu12.ent19#att34"/>
+        <LinkParameter id="sv3#area3#area1#page42#enu25#ln112#par422" name="oid_PASSING_KeyCondition1 [oid]" sourceLinkParameter="sv3#area3#area1#page43#inu15#ln113#par419" target="sv3#area3#area1#mfu12#su29#kcond27.ent19#att33"/>
+        <LinkParameter id="sv3#area3#area1#page42#enu25#ln112#par423" name="mese_mese" source="sv3#area3#area1#page42#enu25#fld149" target="sv3#area3#area1#mfu12.ent19#att35"/>
+      </Link>
+      <Field id="sv3#area3#area1#page42#enu25#fld150" name="anno" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area1#page42#enu25#fld149" name="mese" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area1#page42#enu25#fld148" name="giorno" type="integer" preloaded="true" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area1#page42#enu25">
+          <layout:Link link="sv3#area3#area1#page42#enu25#ln112"/>
+          <layout:Field field="sv3#area3#area1#page42#enu25#fld148"/>
+          <layout:Field field="sv3#area3#area1#page42#enu25#fld149"/>
+          <layout:Field field="sv3#area3#area1#page42#enu25#fld150"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area13#area14#page22" name="Dettagli utente esterno" gr:x="910" gr:y="380">
+  <ContentUnits>
+    <DataUnit id="sv2#area13#area14#page22#dau9" name="Utente esterno" gr:x="0" gr:y="5" entity="ent15" displayAttributes="User#att105 User#att103 email userName password User#att106">
+      <Selector id="sv2#area13#area14#page22#dau9#su15" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area14#page22#dau9#su15#kcond13" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <SelectorUnit id="sv2#area13#area14#page22#seu45" name="Selezione Utente" gr:x="365" gr:y="0" entity="User" distinctAttributes="email">
+      <Selector id="sv2#area13#area14#page22#seu45#su43" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area13#area14#page22#seu45#su43#acond14" name="AttCondition3" predicate="eq" booleanOperator="or" implied="false" attributes="email"/>
+      </Selector>
+      <Link id="sv2#area13#area14#page22#seu45#ln99" name="Flow46" to="sv2#area13#area14#page22#dau9" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area14#page22#seu45#ln99#par374" name="oid_KeyCondition2 [oid]" source="userOIDArray" target="sv2#area13#area14#page22#dau9#su15#kcond13.userOID"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page22#dau9">
+          <layout:Attribute attribute="User#att105"/>
+          <layout:Attribute attribute="User#att103"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="User#att106"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

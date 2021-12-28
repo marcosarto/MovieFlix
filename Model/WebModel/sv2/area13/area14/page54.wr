@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="670" gr:y="750" id="sv2#area13#area14#page54" name="Visualizza transazioni">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv2#area13#area14#page54#pwu3" name="Transazioni" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att22 ent1#att23 ent1#att24"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page54#pwu3">
+          <layout:Attribute attribute="ent1#att22"/>
+          <layout:Attribute attribute="ent1#att23"/>
+          <layout:Attribute attribute="ent1#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

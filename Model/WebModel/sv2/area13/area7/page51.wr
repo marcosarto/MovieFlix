@@ -1,0 +1,79 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area13#area7#page51" name="Crea recensione">
+  <ContentUnits>
+    <EntryUnit gr:x="265" gr:y="0" id="sv2#area13#area7#page51#enu30" name="Creazione" entity="ent6" linkOrder="sv2#area13#area7#page51#enu30#ln128">
+      <Field id="sv2#area13#area7#page51#enu30#fld99" name="valutazione" type="integer" modifiable="true" attribute="ent6#att68"/>
+      <Field id="sv2#area13#area7#page51#enu30#fld100" name="data" type="date" modifiable="true" attribute="ent6#att69"/>
+      <Field id="sv2#area13#area7#page51#enu30#fld101" name="commento" type="text" modifiable="true" attribute="ent6#att71"/>
+      <SelectionField id="sv2#area13#area7#page51#enu30#sfld38" name="RecensioneToFilm" type="string" role="rel14#role27"/>
+      <SelectionField id="sv2#area13#area7#page51#enu30#sfld39" name="RecensioneToSerie" type="string" role="rel13#role26"/>
+      <SelectionField id="sv2#area13#area7#page51#enu30#sfld40" name="RecensioneToUtente_esterno_registrato" type="string" role="rel16#role32"/>
+      <Link id="sv2#area13#area7#page51#enu30#ln128" name="Flow128" to="sv2#area13#area7#cru14" type="normal" validate="true">
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par385" name="commento_commento" source="sv2#area13#area7#page51#enu30#fld101" target="sv2#area13#area7#cru14.ent6#att71"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par386" name="data_data" source="sv2#area13#area7#page51#enu30#fld100" target="sv2#area13#area7#cru14.ent6#att69"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par387" name="RecensioneToFilm_Film.oid(RecensioneToFilm)" source="sv2#area13#area7#page51#enu30#sfld38" target="sv2#area13#area7#cru14.rel14#role27.ent2#att2"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par388" name="Recensione Object_Recensione Object" source="entityBean" target="sv2#area13#area7#cru14.entityBeans"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par389" name="RecensioneToSerie_Serie.oid(RecensioneToSerie)" source="sv2#area13#area7#page51#enu30#sfld39" target="sv2#area13#area7#cru14.rel13#role26.ent3#att36"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par390" name="RecensioneToUtente_esterno_registrato_Utente_esterno_registrato.oid(RecensioneToUtente_esterno_registrato)" source="sv2#area13#area7#page51#enu30#sfld40" target="sv2#area13#area7#cru14.rel16#role32.userOID"/>
+        <LinkParameter id="sv2#area13#area7#page51#enu30#ln128#par392" name="valutazione_valutazione" source="sv2#area13#area7#page51#enu30#fld99" target="sv2#area13#area7#cru14.ent6#att68"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv2#area13#area7#page51#seu46" name="Selector46" entity="ent2">
+      <Link id="sv2#area13#area7#page51#seu46#ln125" name="Flow125" to="sv2#area13#area7#page51#enu30" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area7#page51#seu46#ln125#par379" name="titolo_RecensioneToFilm [label]" source="ent2#att3Array" target="sv2#area13#area7#page51#enu30#sfld38_label"/>
+        <LinkParameter id="sv2#area13#area7#page51#seu46#ln125#par380" name="oid_RecensioneToFilm [output]" source="ent2#att2Array" target="sv2#area13#area7#page51#enu30#sfld38_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="0" gr:y="135" id="sv2#area13#area7#page51#seu47" name="Selector47" entity="ent3">
+      <Link id="sv2#area13#area7#page51#seu47#ln126" name="Flow126" to="sv2#area13#area7#page51#enu30" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area7#page51#seu47#ln126#par381" name="titolo_RecensioneToSerie [label]" source="ent3#att37Array" target="sv2#area13#area7#page51#enu30#sfld39_label"/>
+        <LinkParameter id="sv2#area13#area7#page51#seu47#ln126#par382" name="oid_RecensioneToSerie [output]" source="ent3#att36Array" target="sv2#area13#area7#page51#enu30#sfld39_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="5" gr:y="270" id="sv2#area13#area7#page51#seu48" name="Selector48" entity="ent15">
+      <Link id="sv2#area13#area7#page51#seu48#ln127" name="Flow127" to="sv2#area13#area7#page51#enu30" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area7#page51#seu48#ln127#par383" name="userName_RecensioneToUtente_esterno_registrato [label]" source="userNameArray" target="sv2#area13#area7#page51#enu30#sfld40_label"/>
+        <LinkParameter id="sv2#area13#area7#page51#seu48#ln127#par384" name="oid_RecensioneToUtente_esterno_registrato [output]" source="userOIDArray" target="sv2#area13#area7#page51#enu30#sfld40_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area7#page51#enu30">
+          <layout:Field field="sv2#area13#area7#page51#enu30#fld99"/>
+          <layout:Field field="sv2#area13#area7#page51#enu30#fld100"/>
+          <layout:Field field="sv2#area13#area7#page51#enu30#fld101"/>
+          <layout:Field field="sv2#area13#area7#page51#enu30#sfld38"/>
+          <layout:Field field="sv2#area13#area7#page51#enu30#sfld39"/>
+          <layout:Field field="sv2#area13#area7#page51#enu30#sfld40"/>
+          <layout:Link link="sv2#area13#area7#page51#enu30#ln128"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

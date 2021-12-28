@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area3#area1#page40" name="Pagina gestione genere" linkOrder="sv3#area3#area1#page40#ln110" gr:x="10" gr:y="700" landmark="true">
+  <ContentUnits>
+    <IndexUnit id="sv3#area3#area1#page40#inu14" name="Lista Genere" linkOrder="sv3#area3#area1#page40#inu14#ln108 sv3#area3#area1#page40#inu14#ln109" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att30">
+      <Link id="sv3#area3#area1#page40#inu14#ln108" name="Flow57" to="sv3#area3#area1#page39#enu23" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area1#page40#inu14#ln108#par406" name="categoria_Genere" source="data[].ent17#att30" target="sv3#area3#area1#page39#enu23#fld144_slot"/>
+        <LinkParameter id="sv3#area3#area1#page40#inu14#ln108#par407" name="oid_PASSING" source="data[].ent17#att25" passing="true"/>
+      </Link>
+      <Link id="sv3#area3#area1#page40#inu14#ln109" name="Flow59" to="sv3#area3#area1#dlu4" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area1#page40#inu14">
+          <layout:Link link="sv3#area3#area1#page40#inu14#ln108"/>
+          <layout:Link link="sv3#area3#area1#page40#inu14#ln109"/>
+          <layout:Attribute attribute="ent17#att30"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area3#area1#page40#ln110" name="Flow55" to="sv3#area3#area1#page41" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

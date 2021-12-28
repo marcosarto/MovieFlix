@@ -1,0 +1,5 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area15" name="Area vantaggi per gli abbonati" landmark="true" gr:x="1330" gr:y="425" defaultPage="sv1#area15#page25">
+  <OperationUnits>
+    <LogoutUnit id="sv1#area15#lou3" name="Logout2" gr:x="610" gr:y="35" siteView="sv1"/>
+  </OperationUnits>
+</Area>

@@ -1,0 +1,46 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area15#page25" name="Pagina abbonamenti" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <MultiMessageUnit id="sv1#area15#page25#mssu4" name="Descrizione dei vantaggi" gr:x="0" gr:y="0">
+      <Message xml:space="preserve">Elenco vantaggi degli abbonati</Message>
+    </MultiMessageUnit>
+    <EntryUnit gr:x="20" gr:y="165" id="sv1#area15#page25#enu20" name="Form20" linkOrder="sv1#area15#page25#enu20#ln74">
+      <Link id="sv1#area15#page25#enu20#ln74" name="Flow74" to="sv1#area15#lou3" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area15#page25#mssu4"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area15#page25#enu20">
+          <layout:Link link="sv1#area15#page25#enu20#ln74"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

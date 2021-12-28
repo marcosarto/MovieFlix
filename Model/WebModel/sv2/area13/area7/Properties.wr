@@ -1,0 +1,7 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1220" gr:y="1105" id="sv2#area13#area7" name="Creazione recensione" landmark="true" defaultPage="sv2#area13#area7#page51">
+  <OperationUnits>
+    <CreateUnit gr:x="535" gr:y="40" id="sv2#area13#area7#cru14" name="Create14" entity="ent6">
+      <OKLink id="sv2#area13#area7#cru14#oln54" name="OKFlow54" to="sv2#area13#area7#page51" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</Area>

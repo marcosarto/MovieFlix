@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="250" gr:y="280" id="sv3#area3#area6#page17" name="Pagina modifica dati personali" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#area3#area6#page17#enu10" name="Modifica dati profilo" linkOrder="sv3#area3#area6#page17#enu10#ln35">
+      <Field id="sv3#area3#area6#page17#enu10#fld86" name="nome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld87" name="cognome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld88" name="userName" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld89" name="password" type="password" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld90" name="email" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld91" name="data di iscrizione" type="date" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area3#area6#page17#enu10#fld92" name="data di nascita" type="date" modifiable="true" preloaded="true"/>
+      <Link id="sv3#area3#area6#page17#enu10#ln35" name="Flow35" to="sv3#area3#area6#mfu3" type="normal" validate="true" gr:bendpoints="183,-15,-62,130">
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par167" name="nome_cognome" source="sv3#area3#area6#page17#enu10#fld86" target="sv3#area3#area6#mfu3.User#att103"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par168" name="cognome_data di iscrizione" source="sv3#area3#area6#page17#enu10#fld87" target="sv3#area3#area6#mfu3.User#att104"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par169" name="email_data di nascita" source="sv3#area3#area6#page17#enu10#fld90" target="sv3#area3#area6#mfu3.User#att106"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par170" name="password_email" source="sv3#area3#area6#page17#enu10#fld89" target="sv3#area3#area6#mfu3.password"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par171" name="userName_Group.oid(defaultGroup)" source="sv3#area3#area6#page17#enu10#fld88" target="sv3#area3#area6#mfu3.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par172" name="data di iscrizione_Group.oid(groups)" source="sv3#area3#area6#page17#enu10#fld91" target="sv3#area3#area6#mfu3.User2Group.groupOID"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par173" name="data di nascita_KeyCondition11 [oid]" source="sv3#area3#area6#page17#enu10#fld92" target="sv3#area3#area6#mfu3#su11#kcond11.userOID"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par221" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv3#area3#area6#page16#dau6#ln39#par212" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par222" name="cognome_PASSING" source="sv3#area3#area6#page17#enu10#fld87" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par223" name="data di iscrizione_PASSING" source="sv3#area3#area6#page17#enu10#fld91" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par224" name="data di nascita_PASSING" source="sv3#area3#area6#page17#enu10#fld92" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par225" name="email_PASSING" source="sv3#area3#area6#page17#enu10#fld90" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par226" name="nome_PASSING" source="sv3#area3#area6#page17#enu10#fld86" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par227" name="password_PASSING" source="sv3#area3#area6#page17#enu10#fld89" passing="true"/>
+        <LinkParameter id="sv3#area3#area6#page17#enu10#ln35#par228" name="userName_PASSING" source="sv3#area3#area6#page17#enu10#fld88" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area6#page17#enu10">
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld86"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld87"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld88"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld89"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld90"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld91"/>
+          <layout:Field field="sv3#area3#area6#page17#enu10#fld92"/>
+          <layout:Link link="sv3#area3#area6#page17#enu10#ln35"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

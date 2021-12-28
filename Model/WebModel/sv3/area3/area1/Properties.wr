@@ -1,0 +1,94 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="3215" gr:y="555" id="sv3#area3#area1" name="Area informazioni film e serie" landmark="true" landmarks="sv3#area3#area1#page1 sv3#area3#area1#page37 sv3#area3#area1#page40 sv3#area3#area1#page43 sv3#area3#area1#page45" defaultPage="sv3#area3#area1#page1">
+  <OperationUnits>
+    <CreateUnit gr:x="720" gr:y="205" id="sv3#area3#area1#cru3" name="Crea Regista" entity="ent23">
+      <KOLink id="sv3#area3#area1#cru3#kln9" name="KOFlow9" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-159,105,1051,240;-378,101,832,236"/>
+      <OKLink id="sv3#area3#area1#cru3#oln10" name="OKFlow10" to="sv3#area3#area1#page1" automaticCoupling="true" gr:bendpoints="-70,76,385,236;-169,75,286,235;-315,73,140,233"/>
+    </CreateUnit>
+    <ModifyUnit gr:x="685" gr:y="10" id="sv3#area3#area1#mfu4" name="Modifica Regista" entity="ent23">
+      <Selector id="sv3#area3#area1#mfu4#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#mfu4#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#mfu4#kln7" name="KOFlow7" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-142,-159,1088,46;-578,-127,642,-142"/>
+      <OKLink id="sv3#area3#area1#mfu4#oln8" name="OKFlow8" to="sv3#area3#area1#page1" automaticCoupling="true" gr:bendpoints="-128,-88,337,-78;-215,-90,250,-80;-295,-88,170,-78"/>
+    </ModifyUnit>
+    <DeleteUnit gr:x="15" gr:y="215" id="sv3#area3#area1#dlu1" name="Cancella Regista" entity="ent23">
+      <Selector id="sv3#area3#area1#dlu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#dlu1#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#dlu1#kln8" name="KOFlow8" to="sv3#area3#area5#page10" automaticCoupling="true"/>
+      <OKLink id="sv3#area3#area1#dlu1#oln7" name="OKFlow7" to="sv3#area3#area1#page1" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv3#area3#area1#dlu3" name="Cancella Lingua" gr:x="45" gr:y="545" entity="ent18">
+      <Selector id="sv3#area3#area1#dlu3#su24" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#dlu3#su24#kcond22" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#dlu3#kln19" name="KOFlow8" to="sv3#area3#area5#page10" automaticCoupling="true"/>
+      <OKLink id="sv3#area3#area1#dlu3#oln19" name="OKFlow7" to="sv3#area3#area1#page37" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv3#area3#area1#mfu10" name="Modifica Lingua" gr:x="515" gr:y="395" entity="ent18">
+      <Selector id="sv3#area3#area1#mfu10#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#mfu10#su25#kcond23" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#mfu10#kln20" name="KOFlow7" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-195,-115,1030,250;-588,-132,637,233"/>
+      <OKLink id="sv3#area3#area1#mfu10#oln20" name="OKFlow8" to="sv3#area3#area1#page37" automaticCoupling="true" gr:bendpoints="-128,-88,337,-78;-215,-90,250,-80;-295,-88,170,-78"/>
+    </ModifyUnit>
+    <CreateUnit id="sv3#area3#area1#cru9" name="Crea Lingua" gr:x="520" gr:y="550" entity="ent18">
+      <KOLink id="sv3#area3#area1#cru9#kln21" name="KOFlow9" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="115,-147,1330,368;97,-263,1312,252;-172,-263,1043,252;-495,-288,720,227"/>
+      <OKLink id="sv3#area3#area1#cru9#oln21" name="OKFlow10" to="sv3#area3#area1#page37" automaticCoupling="true" gr:bendpoints="-70,76,385,236;-169,75,286,235;-315,73,140,233"/>
+    </CreateUnit>
+    <DeleteUnit id="sv3#area3#area1#dlu4" name="Cancella Genere" gr:x="50" gr:y="880" entity="ent17">
+      <Selector id="sv3#area3#area1#dlu4#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#dlu4#su26#kcond24" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#dlu4#kln22" name="KOFlow8" to="sv3#area3#area5#page10" automaticCoupling="true"/>
+      <OKLink id="sv3#area3#area1#dlu4#oln22" name="OKFlow7" to="sv3#area3#area1#page40" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv3#area3#area1#mfu11" name="Modifica Genere" gr:x="520" gr:y="730" entity="ent17">
+      <Selector id="sv3#area3#area1#mfu11#su27" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#mfu11#su27#kcond25" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#mfu11#kln23" name="KOFlow7" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="80,-94,1295,566;77,-460,1292,200;-545,-465,670,195"/>
+      <OKLink id="sv3#area3#area1#mfu11#oln23" name="OKFlow8" to="sv3#area3#area1#page40" automaticCoupling="true" gr:bendpoints="-128,-88,337,-78;-215,-90,250,-80;-295,-88,170,-78"/>
+    </ModifyUnit>
+    <CreateUnit id="sv3#area3#area1#cru10" name="Crea Genere" gr:x="525" gr:y="885" entity="ent17">
+      <KOLink id="sv3#area3#area1#cru10#kln24" name="KOFlow9" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-192,77,1028,927;-359,77,861,927;-602,81,618,931;-648,-134,572,716;-835,-250,385,600"/>
+      <OKLink id="sv3#area3#area1#cru10#oln24" name="OKFlow10" to="sv3#area3#area1#page40" automaticCoupling="true" gr:bendpoints="-70,76,385,236;-169,75,286,235;-315,73,140,233"/>
+    </CreateUnit>
+    <DeleteUnit id="sv3#area3#area1#dlu5" name="Cancella Data" gr:x="45" gr:y="1195" entity="ent19">
+      <Selector id="sv3#area3#area1#dlu5#su28" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#dlu5#su28#kcond26" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#dlu5#kln25" name="KOFlow8" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-132,-85,638,1080;-284,-569,486,596"/>
+      <OKLink id="sv3#area3#area1#dlu5#oln25" name="OKFlow7" to="sv3#area3#area1#page43" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv3#area3#area1#mfu12" name="Modifica Data" gr:x="530" gr:y="1045" entity="ent19">
+      <Selector id="sv3#area3#area1#mfu12#su29" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#mfu12#su29#kcond27" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#mfu12#kln26" name="KOFlow7" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="81,-183,1321,832;76,-398,1316,617;-603,-398,637,617;-764,-542,476,473"/>
+      <OKLink id="sv3#area3#area1#mfu12#oln26" name="OKFlow8" to="sv3#area3#area1#page43" automaticCoupling="true" gr:bendpoints="-128,-88,337,-78;-215,-90,250,-80;-295,-88,170,-78"/>
+    </ModifyUnit>
+    <CreateUnit id="sv3#area3#area1#cru11" name="Crea Data" gr:x="535" gr:y="1200" entity="ent19">
+      <KOLink id="sv3#area3#area1#cru11#kln27" name="KOFlow9" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="97,-77,1327,1088;95,-560,1325,605;-528,-567,702,598"/>
+      <OKLink id="sv3#area3#area1#cru11#oln27" name="OKFlow10" to="sv3#area3#area1#page43" automaticCoupling="true" gr:bendpoints="-70,76,385,236;-169,75,286,235;-315,73,140,233"/>
+    </CreateUnit>
+    <DeleteUnit id="sv3#area3#area1#dlu6" name="Cancella Fascia di prezzo" gr:x="40" gr:y="1540" entity="ent22">
+      <Selector id="sv3#area3#area1#dlu6#su30" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#dlu6#su30#kcond28" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#dlu6#kln28" name="KOFlow8" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="-153,-3,597,1507;-170,-790,580,720"/>
+      <OKLink id="sv3#area3#area1#dlu6#oln28" name="OKFlow7" to="sv3#area3#area1#page45" automaticCoupling="true"/>
+    </DeleteUnit>
+    <CreateUnit id="sv3#area3#area1#cru12" name="Crea Fascia" gr:x="515" gr:y="1545" entity="ent22">
+      <KOLink id="sv3#area3#area1#cru12#kln29" name="KOFlow9" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="96,-62,1306,1448;140,-99,1350,1411;138,-235,1348,1275;110,-907,1320,603;-487,-900,723,610"/>
+      <OKLink id="sv3#area3#area1#cru12#oln29" name="OKFlow10" to="sv3#area3#area1#page45" automaticCoupling="true" gr:bendpoints="-70,76,385,236;-169,75,286,235;-315,73,140,233;-333,-18,132,142;-342,-60,123,100"/>
+    </CreateUnit>
+    <ModifyUnit id="sv3#area3#area1#mfu13" name="Modifica Fascia di prezzo" gr:x="510" gr:y="1390" entity="ent22">
+      <Selector id="sv3#area3#area1#mfu13#su31" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area3#area1#mfu13#su31#kcond29" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area3#area1#mfu13#kln30" name="KOFlow7" to="sv3#area3#area5#page10" automaticCoupling="true" gr:bendpoints="81,-183,1321,832;91,-739,1311,621;-579,-749,641,611;-764,-542,476,473"/>
+      <OKLink id="sv3#area3#area1#mfu13#oln30" name="OKFlow8" to="sv3#area3#area1#page45" automaticCoupling="true" gr:bendpoints="-128,-88,337,-78;-215,-90,250,-80;-295,-88,170,-78"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

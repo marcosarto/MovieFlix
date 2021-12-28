@@ -1,0 +1,7 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-1950" gr:y="-960" id="sv3#area3" name="Area Gestore" landmark="true" landmarks="sv3#area3#area5 sv3#area3#area6 sv3#area3#area1" defaultPage="sv3#area3#lou1">
+  <OperationUnits>
+    <LogoutUnit gr:x="2010" gr:y="950" id="sv3#area3#lou1" name="Esci">
+      <KOLink id="sv3#area3#lou1#kln5" name="KOFlow5" to="sv3#area3#area5#page11" automaticCoupling="true" gr:bendpoints="-219,44,496,-51"/>
+    </LogoutUnit>
+  </OperationUnits>
+</Area>

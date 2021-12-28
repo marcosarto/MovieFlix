@@ -1,0 +1,49 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area13#area16#page26" name="Pagina dati personali" gr:x="190" gr:y="0">
+  <ContentUnits>
+    <GetUnit id="sv2#area13#area16#page26#gtu4" name="Utente Corrente" gr:x="0" gr:y="10" contextParameters="UserCtxParam">
+      <Link id="sv2#area13#area16#page26#gtu4#ln40" name="Flow32" to="sv2#area13#area16#page26#dau11" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area16#page26#gtu4#ln40#par246" name="UserCtxParam.oid_PASSING" source="sv2#area13#area16#page26#gtu4.UserCtxParam" passing="true"/>
+        <LinkParameter id="sv2#area13#area16#page26#gtu4#ln40#par247" name="UserCtxParam.oid_KeyCondition9 [oid]" source="sv2#area13#area16#page26#gtu4.UserCtxParam" target="sv2#area13#area16#page26#dau11#su19#kcond17.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit id="sv2#area13#area16#page26#dau11" name="Utente" linkOrder="sv2#area13#area16#page26#dau11#ln41" customDescriptor="false" gr:x="300" gr:y="0" entity="User" displayAttributes="User#att105 User#att103 email userName password User#att106">
+      <Selector id="sv2#area13#area16#page26#dau11#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area16#page26#dau11#su19#kcond17" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area13#area16#page26#dau11#ln41" name="Flow39" to="sv2#area13#area16#page27#enu12" type="normal" validate="true">
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par248" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv2#area13#area16#page26#gtu4#ln40#par246" passing="true"/>
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par249" name="cognome_cognome" source="data.User#att103" target="sv2#area13#area16#page27#enu12#fld108_slot"/>
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par251" name="data di nascita_data di nascita" source="data.User#att106" target="sv2#area13#area16#page27#enu12#fld113_slot"/>
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par252" name="email_email" source="data.email" target="sv2#area13#area16#page27#enu12#fld111_slot"/>
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par253" name="nome_nome" source="data.User#att105" target="sv2#area13#area16#page27#enu12#fld107_slot"/>
+        <LinkParameter id="sv2#area13#area16#page26#dau11#ln41#par255" name="userName_userName" source="data.userName" target="sv2#area13#area16#page27#enu12#fld109_slot"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area16#page26#dau11">
+          <layout:Link link="sv2#area13#area16#page26#dau11#ln41"/>
+          <layout:Attribute attribute="User#att105"/>
+          <layout:Attribute attribute="User#att103"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="User#att106"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

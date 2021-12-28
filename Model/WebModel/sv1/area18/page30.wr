@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area18#page30" name="Registrazione" gr:x="15" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv1#area18#page30#enu18" name="Registra" linkOrder="sv1#area18#page30#enu18#ln71" gr:x="0" gr:y="0" fieldOrder="sv1#area18#page30#enu18#fld68 sv1#area18#page30#enu18#fld65 sv1#area18#page30#enu18#fld63" entity="ent15">
+      <Field id="sv1#area18#page30#enu18#fld63" name="Password" type="string" modifiable="true"/>
+      <Field id="sv1#area18#page30#enu18#fld65" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#area18#page30#enu18#fld68" name="e-mail" type="string" modifiable="true"/>
+      <Link id="sv1#area18#page30#enu18#ln71" name="Flow2" to="sv1#area18#cru8" type="normal" validate="true">
+        <LinkParameter id="sv1#area18#page30#enu18#ln71#par186" name="e-mail_PASSING" source="sv1#area18#page30#enu18#fld68" passing="true"/>
+        <LinkParameter id="sv1#area18#page30#enu18#ln71#par187" name="Password_PASSING" source="sv1#area18#page30#enu18#fld63" passing="true"/>
+        <LinkParameter id="sv1#area18#page30#enu18#ln71#par188" name="Username_PASSING" source="sv1#area18#page30#enu18#fld65" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area18#page30#enu18">
+          <layout:Field field="sv1#area18#page30#enu18#fld68"/>
+          <layout:Field field="sv1#area18#page30#enu18#fld65"/>
+          <layout:Field field="sv1#area18#page30#enu18#fld63"/>
+          <layout:Link link="sv1#area18#page30#enu18#ln71"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

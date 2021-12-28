@@ -1,0 +1,254 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area3#area5#page3" name="Pagina Inserimento contenuti" landmark="true">
+  <ContentUnits>
+    <EntryUnit id="sv3#area3#area5#page3#enu4" name="Inserisci dati Film" gr:x="320" gr:y="105" linkOrder="sv3#area3#area5#page3#enu4#ln2" fieldOrder="sv3#area3#area5#page3#enu4#fld58 sv3#area3#area5#page3#enu4#fld59 sv3#area3#area5#page3#enu4#fld62 sv3#area3#area5#page3#enu4#fld64 sv3#area3#area5#page3#enu4#fld66 sv3#area3#area5#page3#enu4#fld67 sv3#area3#area5#page3#enu4#fld70 sv3#area3#area5#page3#enu4#fld71 sv3#area3#area5#page3#enu4#fld72 sv3#area3#area5#page3#enu4#fld73 sv3#area3#area5#page3#enu4#fld74 sv3#area3#area5#page3#enu4#sfld1 sv3#area3#area5#page3#enu4#sfld2 sv3#area3#area5#page3#enu4#sfld5 sv3#area3#area5#page3#enu4#sfld6 sv3#area3#area5#page3#enu4#sfld25">
+      <Link id="sv3#area3#area5#page3#enu4#ln2" name="Flow2" to="sv3#area3#area5#cru1" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par142" name="cast_cast" source="sv3#area3#area5#page3#enu4#fld64" target="sv3#area3#area5#cru1.ent2#att9"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par143" name="anno_DataDiUscita.oid(FilmToDataDiUscita)" source="sv3#area3#area5#page3#enu4#sfld2" target="sv3#area3#area5#cru1.rel28#role55.ent19#att33"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par144" name="durata_durata" source="sv3#area3#area5#page3#enu4#fld67" target="sv3#area3#area5#cru1.ent2#att12"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par145" name="et&#224; minima_et&#224; minima" source="sv3#area3#area5#page3#enu4#fld66" target="sv3#area3#area5#cru1.ent2#att11"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par146" name="fascia_prezzo_FasciaDiPrezzo.oid(FilmToFasciaDiPrezzo)" source="sv3#area3#area5#page3#enu4#sfld25" target="sv3#area3#area5#cru1.rel29#role57.ent22#att60"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par147" name="Genere_Genere.oid(FilmToGenere)" source="sv3#area3#area5#page3#enu4#sfld6" target="sv3#area3#area5#cru1.rel26#role51.ent17#att25"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par148" name="Lingua_Lingua.oid(FilmToLingua)" source="sv3#area3#area5#page3#enu4#sfld5" target="sv3#area3#area5#cru1.rel27#role53.ent18#att31"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par149" name="locandina_locandina" source="sv3#area3#area5#page3#enu4#fld70" target="sv3#area3#area5#cru1.ent2#att14"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par150" name="regista_Regista.oid(FilmToRegista)" source="sv3#area3#area5#page3#enu4#sfld1" target="sv3#area3#area5#cru1.rel31#role61.ent23#att80"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par151" name="sfondo_sfondo" source="sv3#area3#area5#page3#enu4#fld71" target="sv3#area3#area5#cru1.ent2#att15"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par152" name="sottotitoli_sottotitoli" source="sv3#area3#area5#page3#enu4#fld62" target="sv3#area3#area5#cru1.ent2#att7"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par153" name="titolo_titolo" source="sv3#area3#area5#page3#enu4#fld58" target="sv3#area3#area5#cru1.ent2#att3"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par154" name="trailer_trailer" source="sv3#area3#area5#page3#enu4#fld72" target="sv3#area3#area5#cru1.ent2#att16"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par155" name="trama_trama" source="sv3#area3#area5#page3#enu4#fld59" target="sv3#area3#area5#cru1.ent2#att4"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par157" name="valutazione della critica_valutazione della critica" source="sv3#area3#area5#page3#enu4#fld73" target="sv3#area3#area5#cru1.ent2#att17"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu4#ln2#par158" name="valutazione media_valutazione media" source="sv3#area3#area5#page3#enu4#fld74" target="sv3#area3#area5#cru1.ent2#att18"/>
+      </Link>
+      <Field id="sv3#area3#area5#page3#enu4#fld58" name="titolo" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld59" name="trama" type="text" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld62" name="sottotitoli" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld64" name="cast" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld66" name="et&#224; minima" type="integer" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld67" name="durata" type="integer" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld70" name="locandina" type="blob" modifiable="true" contentType="image"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld71" name="sfondo" type="blob" modifiable="true" contentType="image"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld72" name="trailer" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld73" name="valutazione della critica" type="float" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu4#fld74" name="valutazione media" type="float" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu4#sfld1" name="regista" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu4#sfld2" name="anno" type="integer" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu4#sfld6" name="Genere" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu4#sfld5" name="Lingua" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu4#sfld25" name="fascia_prezzo" type="boolean" modifiable="true"/>
+    </EntryUnit>
+    <EntryUnit id="sv3#area3#area5#page3#enu6" name="Inserisci dati Serie" gr:x="300" gr:y="405" fieldOrder="sv3#area3#area5#page3#enu6#fld35 sv3#area3#area5#page3#enu6#fld36 sv3#area3#area5#page3#enu6#fld39 sv3#area3#area5#page3#enu6#fld40 sv3#area3#area5#page3#enu6#fld49 sv3#area3#area5#page3#enu6#fld50 sv3#area3#area5#page3#enu6#fld53 sv3#area3#area5#page3#enu6#fld54 sv3#area3#area5#page3#enu6#fld55 sv3#area3#area5#page3#enu6#fld56 sv3#area3#area5#page3#enu6#fld57 sv3#area3#area5#page3#enu6#sfld7 sv3#area3#area5#page3#enu6#sfld8 sv3#area3#area5#page3#enu6#sfld11 sv3#area3#area5#page3#enu6#sfld12 sv3#area3#area5#page3#enu6#sfld26" linkOrder="sv3#area3#area5#page3#enu6#ln9">
+      <Link id="sv3#area3#area5#page3#enu6#ln9" name="Flow9" to="sv3#area3#area5#cru2" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par160" name="Anno_DataDiUscita.oid(SerieToDataDiUscita)" source="sv3#area3#area5#page3#enu6#sfld8" target="sv3#area3#area5#cru2.rel20#role39.ent19#att33"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par161" name="et&#224; minima_et&#224; minima" source="sv3#area3#area5#page3#enu6#fld49" target="sv3#area3#area5#cru2.ent3#att44"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par163" name="fascia_prezzo_FasciaDiPrezzo.oid(SerieToFasciaDiPrezzo)" source="sv3#area3#area5#page3#enu6#sfld26" target="sv3#area3#area5#cru2.rel25#role49.ent22#att60"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par164" name="Genere_Genere.oid(SerieToGenere)" source="sv3#area3#area5#page3#enu6#sfld12" target="sv3#area3#area5#cru2.rel1#role1.ent17#att25"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par166" name="Lingua_Lingua.oid(SerieToLingua)" source="sv3#area3#area5#page3#enu6#sfld11" target="sv3#area3#area5#cru2.rel2#role3.ent18#att31"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par174" name="locandina_locandina" source="sv3#area3#area5#page3#enu6#fld53" target="sv3#area3#area5#cru2.ent3#att47"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par175" name="sfondo_sfondo" source="sv3#area3#area5#page3#enu6#fld54" target="sv3#area3#area5#cru2.ent3#att48"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par176" name="sottotitoli_sottotitoli" source="sv3#area3#area5#page3#enu6#fld39" target="sv3#area3#area5#cru2.ent3#att41"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par177" name="stagioni_stagioni" source="sv3#area3#area5#page3#enu6#fld50" target="sv3#area3#area5#cru2.ent3#att45"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par178" name="titolo_titolo" source="sv3#area3#area5#page3#enu6#fld35" target="sv3#area3#area5#cru2.ent3#att37"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par179" name="trailer_trailer" source="sv3#area3#area5#page3#enu6#fld55" target="sv3#area3#area5#cru2.ent3#att49"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par180" name="trama_trama" source="sv3#area3#area5#page3#enu6#fld36" target="sv3#area3#area5#cru2.ent3#att38"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par181" name="valutazione della critica_valutazione della critica" source="sv3#area3#area5#page3#enu6#fld56" target="sv3#area3#area5#cru2.ent3#att50"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu6#ln9#par182" name="valutazione media_valutazione media" source="sv3#area3#area5#page3#enu6#fld57" target="sv3#area3#area5#cru2.ent3#att51"/>
+      </Link>
+      <Field id="sv3#area3#area5#page3#enu6#fld35" name="titolo" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld36" name="trama" type="text" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld39" name="sottotitoli" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld40" name="cast" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld49" name="et&#224; minima" type="integer" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld50" name="stagioni" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld53" name="locandina" type="blob" modifiable="true" contentType="image"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld54" name="sfondo" type="blob" modifiable="true" contentType="image"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld55" name="trailer" type="string" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld56" name="valutazione della critica" type="float" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu6#fld57" name="valutazione media" type="float" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu6#sfld7" name="Regista" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu6#sfld12" name="Genere" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu6#sfld11" name="Lingua" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu6#sfld8" name="Anno" type="integer" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu6#sfld26" name="fascia_prezzo" type="boolean" modifiable="true"/>
+    </EntryUnit>
+    <SelectorUnit gr:x="25" gr:y="100" id="sv3#area3#area5#page3#seu2" name="Seleziona Anno" entity="ent19">
+      <Link id="sv3#area3#area5#page3#seu2#ln11" name="Flow11" to="sv3#area3#area5#page3#enu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu2#ln11#par79" name="anno_anno [label]" source="ent19#att46Array" target="sv3#area3#area5#page3#enu4#sfld2_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu2#ln11#par80" name="oid_anno [output]" source="ent19#att33Array" target="sv3#area3#area5#page3#enu4#sfld2_output"/>
+      </Link>
+      <Link id="sv3#area3#area5#page3#seu2#ln38" name="Flow38" to="sv3#area3#area5#page3#enu6" type="transport" validate="true" gr:bendpoints="178,98,-52,-297">
+        <LinkParameter id="sv3#area3#area5#page3#seu2#ln38#par60" name="anno_Anno [label]" source="ent19#att46Array" target="sv3#area3#area5#page3#enu6#sfld8_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu2#ln38#par61" name="oid_Anno [output]" source="ent19#att33Array" target="sv3#area3#area5#page3#enu6#sfld8_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="30" gr:y="445" id="sv3#area3#area5#page3#seu4" name="Selezione Genere" entity="ent17">
+      <Link id="sv3#area3#area5#page3#seu4#ln36" name="Flow36" to="sv3#area3#area5#page3#enu4" type="transport" validate="true" gr:bendpoints="206,-165,-59,280">
+        <LinkParameter id="sv3#area3#area5#page3#seu4#ln36#par25" name="categoria_Genere [label]" source="ent17#att30Array" target="sv3#area3#area5#page3#enu4#sfld6_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu4#ln36#par26" name="oid_Genere [output]" source="ent17#att25Array" target="sv3#area3#area5#page3#enu4#sfld6_output"/>
+      </Link>
+      <Link id="sv3#area3#area5#page3#seu4#ln47" name="Flow47" to="sv3#area3#area5#page3#enu6" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu4#ln47#par68" name="categoria_Genere [label]" source="ent17#att30Array" target="sv3#area3#area5#page3#enu6#sfld12_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu4#ln47#par69" name="oid_Genere [output]" source="ent17#att25Array" target="sv3#area3#area5#page3#enu6#sfld12_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="30" gr:y="340" id="sv3#area3#area5#page3#seu5" name="Selezione Lingua" entity="ent18">
+      <Link id="sv3#area3#area5#page3#seu5#ln33" name="Flow33" to="sv3#area3#area5#page3#enu4" type="transport" validate="true" gr:bendpoints="177,-118,-88,217">
+        <LinkParameter id="sv3#area3#area5#page3#seu5#ln33#par23" name="lingua_Lingua [label]" source="ent18#att32Array" target="sv3#area3#area5#page3#enu4#sfld5_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu5#ln33#par24" name="oid_Lingua [output]" source="ent18#att31Array" target="sv3#area3#area5#page3#enu4#sfld5_output"/>
+      </Link>
+      <Link id="sv3#area3#area5#page3#seu5#ln48" name="Flow48" to="sv3#area3#area5#page3#enu6" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu5#ln48#par70" name="lingua_Lingua [label]" source="ent18#att32Array" target="sv3#area3#area5#page3#enu6#sfld11_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu5#ln48#par71" name="oid_Lingua [output]" source="ent18#att31Array" target="sv3#area3#area5#page3#enu6#sfld11_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="20" gr:y="0" id="sv3#area3#area5#page3#seu6" name="Seleziona Regista" entity="ent23">
+      <Link id="sv3#area3#area5#page3#seu6#ln1" name="Flow1" to="sv3#area3#area5#page3#enu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu6#ln1#par77" name="NomeCognome_regista [label]" source="ent23#att81Array" target="sv3#area3#area5#page3#enu4#sfld1_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu6#ln1#par78" name="oid_regista [output]" source="ent23#att80Array" target="sv3#area3#area5#page3#enu4#sfld1_output"/>
+      </Link>
+      <Link id="sv3#area3#area5#page3#seu6#ln37" name="Flow37" to="sv3#area3#area5#page3#enu6" type="transport" validate="true" gr:bendpoints="112,81,-118,-414;146,207,-84,-288">
+        <LinkParameter id="sv3#area3#area5#page3#seu6#ln37#par62" name="NomeCognome_Regista [label]" source="ent23#att81Array" target="sv3#area3#area5#page3#enu6#sfld7_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu6#ln37#par63" name="oid_Regista [output]" source="ent23#att80Array" target="sv3#area3#area5#page3#enu6#sfld7_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="0" gr:y="240" id="sv3#area3#area5#page3#seu20" name="Seleziona Fascia di prezzo" entity="ent22">
+      <Link id="sv3#area3#area5#page3#seu20#ln52" name="Flow52" to="sv3#area3#area5#page3#enu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu20#ln52#par136" name="fascia_prezzo_fascia_prezzo [label]" source="ent22#att93Array" target="sv3#area3#area5#page3#enu4#sfld25_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu20#ln52#par138" name="oid_fascia_prezzo [output]" source="ent22#att60Array" target="sv3#area3#area5#page3#enu4#sfld25_output"/>
+      </Link>
+      <Link id="sv3#area3#area5#page3#seu20#ln53" name="Flow53" to="sv3#area3#area5#page3#enu6" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu20#ln53#par139" name="fascia_prezzo_fascia_prezzo [label]" source="ent22#att93Array" target="sv3#area3#area5#page3#enu6#sfld26_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu20#ln53#par141" name="oid_fascia_prezzo [output]" source="ent22#att60Array" target="sv3#area3#area5#page3#enu6#sfld26_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="35" gr:y="570" id="sv3#area3#area5#page3#seu8" name="Seleziona Serie" entity="ent3">
+      <Link id="sv3#area3#area5#page3#seu8#ln14" name="Flow14" to="sv3#area3#area5#page3#enu11" type="transport" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#seu8#ln14#par15" name="titolo_Serie [label]" source="ent3#att37Array" target="sv3#area3#area5#page3#enu11#sfld9_label"/>
+        <LinkParameter id="sv3#area3#area5#page3#seu8#ln14#par19" name="oid_Serie [output]" source="ent3#att36Array" target="sv3#area3#area5#page3#enu11#sfld9_output"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit gr:x="270" gr:y="555" id="sv3#area3#area5#page3#enu11" name="Inserisci dati episodio" linkOrder="sv3#area3#area5#page3#enu11#ln26" fieldOrder="sv3#area3#area5#page3#enu11#fld6 sv3#area3#area5#page3#enu11#fld10 sv3#area3#area5#page3#enu11#fld11 sv3#area3#area5#page3#enu11#fld12 sv3#area3#area5#page3#enu11#fld17 sv3#area3#area5#page3#enu11#sfld9">
+      <Link id="sv3#area3#area5#page3#enu11#ln26" name="Flow26" to="sv3#area3#area5#cru6" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par21" name="Cast_cast" source="sv3#area3#area5#page3#enu11#fld11" target="sv3#area3#area5#cru6.ent4#att56"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par22" name="Durata_durata" source="sv3#area3#area5#page3#enu11#fld12" target="sv3#area3#area5#cru6.ent4#att58"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par30" name="Serie_Serie.oid(EpisodioToSerie)" source="sv3#area3#area5#page3#enu11#sfld9" target="sv3#area3#area5#cru6.rel11#role21.ent3#att36"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par31" name="Stagione_stagione" source="sv3#area3#area5#page3#enu11#fld17" target="sv3#area3#area5#cru6.ent4#att59"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par43" name="Titolo_titolo" source="sv3#area3#area5#page3#enu11#fld6" target="sv3#area3#area5#cru6.ent4#att53"/>
+        <LinkParameter id="sv3#area3#area5#page3#enu11#ln26#par49" name="Trama_trama" source="sv3#area3#area5#page3#enu11#fld10" target="sv3#area3#area5#cru6.ent4#att54"/>
+      </Link>
+      <Field id="sv3#area3#area5#page3#enu11#fld17" name="Stagione" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu11#fld12" name="Durata" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu11#fld11" name="Cast" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu11#fld10" name="Trama" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area5#page3#enu11#fld6" name="Titolo" type="string" preloaded="true" modifiable="true"/>
+      <SelectionField id="sv3#area3#area5#page3#enu11#sfld9" name="Serie" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area5#page3#enu4">
+          <layout:Link link="sv3#area3#area5#page3#enu4#ln2"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld58"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld59"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld62"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld64"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld66"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld67"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld70"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld71"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld72"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld73"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#fld74"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#sfld1"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#sfld2"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#sfld5"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#sfld6"/>
+          <layout:Field field="sv3#area3#area5#page3#enu4#sfld25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area5#page3#enu6">
+          <layout:Link link="sv3#area3#area5#page3#enu6#ln9"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld35"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld36"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld39"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld40"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld49"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld50"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld53"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld54"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld55"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld56"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#fld57"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#sfld7"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#sfld8"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#sfld11"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#sfld12"/>
+          <layout:Field field="sv3#area3#area5#page3#enu6#sfld26"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area5#page3#enu11">
+          <layout:Link link="sv3#area3#area5#page3#enu11#ln26"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#fld6"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#fld10"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#fld11"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#fld12"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#fld17"/>
+          <layout:Field field="sv3#area3#area5#page3#enu11#sfld9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

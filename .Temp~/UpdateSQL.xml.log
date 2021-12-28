@@ -1,0 +1,112 @@
+[28 dic 2021 16:33:37] DEBUG Executing SQL script
+[28 dic 2021 16:33:37] INFO ================================================================================
+[28 dic 2021 16:33:37] INFO onError= 'stop'
+[28 dic 2021 16:33:37] INFO autoCommit= 'false'
+[28 dic 2021 16:33:37] INFO username= 'root'
+[28 dic 2021 16:33:37] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\prova\.Temp~\UpdateSQL.xml'
+[28 dic 2021 16:33:37] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\prova\.Temp~\UpdateSQL.xml.log'
+[28 dic 2021 16:33:37] INFO encoding= ''
+[28 dic 2021 16:33:37] INFO driverClass= 'com.mysql.jdbc.Driver'
+[28 dic 2021 16:33:37] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\prova\.Temp~\UpdateSQL.sql'
+[28 dic 2021 16:33:37] INFO eventSocketPort= '58530'
+[28 dic 2021 16:33:37] INFO statementSeparator= ';'
+[28 dic 2021 16:33:37] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[28 dic 2021 16:33:37] INFO password= ''
+[28 dic 2021 16:33:37] INFO url= 'jdbc:mysql://localhost/MovieFlix'
+[28 dic 2021 16:33:37] INFO ================================================================================
+[28 dic 2021 16:33:37] INFO Connecting to the Database...
+[28 dic 2021 16:33:37] INFO Database connection estabilished
+[28 dic 2021 16:33:37] INFO transaction isolation: 4
+[28 dic 2021 16:33:37] DEBUG ================================================================================
+[28 dic 2021 16:33:37] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\prova\.Temp~\UpdateSQL.sql
+[28 dic 2021 16:33:37] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `utente` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), `cognome`  varchar(255), `nome`  varchar(255), `data_di_nascita`  date, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `transazione` ( `oid`  integer  not null, `data`  date, `costo`  double precision, `motivotransazione`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `catalogo_personale` ( `oid`  integer  not null, `ampiezza_film`  integer, `ampiezza_serie`  integer, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `utente_esterno_registrato` ( `utente_oid`  integer  not null, primary key (`utente_oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `datipagamento` ( `oid`  integer  not null, `numerocarta`  integer, `ccv`  integer, `scadenza`  date, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `genere` ( `oid`  integer  not null, `categoria`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `lingua` ( `oid`  integer  not null, `lingua`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `datadiuscita` ( `oid`  integer  not null, `giorno`  integer, `mese`  integer, `anno`  integer, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `film` ( `oid`  integer  not null, `titolo`  varchar(255), `trama`  longtext, `sottotitoli`  varchar(255), `cast`  varchar(255), `eta_minima`  integer, `durata`  integer, `locandina`  varchar(255), `sfondo`  varchar(255), `trailer`  varchar(255), `valutazione_della_critica`  double precision, `valutazione_media`  double precision, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `abbonamento` ( `oid`  integer  not null, `data_fine`  date, `noleggi`  integer, `prezzo`  integer, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `utente_esterno_registrato_abbo` ( `utente_esterno_registrato_oid`  integer  not null, primary key (`utente_esterno_registrato_oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `fasciadiprezzo` ( `oid`  integer  not null, `prezzo_acquisto`  double precision, `fascia_prezzo`  bit, `prezzo_noleggio`  double precision, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `regista` ( `oid`  integer  not null, `nomecognome`  varchar(255), primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `serie` ( `oid`  integer  not null, `titolo`  varchar(255), `trama`  longtext, `sottotitoli`  varchar(255), `cast`  varchar(255), `eta_minima`  integer, `stagioni`  varchar(255), `locandina`  varchar(255), `sfondo`  varchar(255), `trailer`  varchar(255), `valutazione_della_critica`  double precision, `valutazione_media`  double precision, primary key (`oid`) )
+[28 dic 2021 16:33:37] DEBUG Executing statement:    create table `episodio` ( `oid`  integer  not null, `titolo`  varchar(255), `trama`  longtext, `cast`  varchar(255), `durata`  integer, `stagione`  integer, primary key (`oid`) )
+[28 dic 2021 16:33:38] DEBUG Executing statement:    create table `catalogo_generale` ( `oid`  integer  not null, `ampiezza_film`  integer, `ampiezza_serie`  integer, primary key (`oid`) )
+[28 dic 2021 16:33:38] DEBUG Executing statement:    create table `recensione` ( `oid`  integer  not null, `valutazione`  integer, `data`  date, `commento`  longtext, primary key (`oid`) )
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_oid`), add constraint fk_group_module_group foreign key (`group_oid`) references `group` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `utente`  add column  `group_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `utente`   add index fk_utente_group (`group_oid`), add constraint fk_utente_group foreign key (`group_oid`) references `group` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    create table `user_group` ( `utente_oid`  integer not null, `group_oid`  integer not null, primary key (`utente_oid`, `group_oid`) )
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_utente (`utente_oid`), add constraint fk_user_group_utente foreign key (`utente_oid`) references `utente` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_oid`), add constraint fk_user_group_group foreign key (`group_oid`) references `group` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `serie`  add column  `genere_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `serie`   add index fk_serie_genere (`genere_oid`), add constraint fk_serie_genere foreign key (`genere_oid`) references `genere` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `episodio`  add column  `serie_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `episodio`   add index fk_episodio_serie (`serie_oid`), add constraint fk_episodio_serie foreign key (`serie_oid`) references `serie` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `abbonamento`  add column  `utente_esterno_registrato_abbo`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `abbonamento`   add index fk_abbonamento_utente_esterno (`utente_esterno_registrato_abbo`), add constraint fk_abbonamento_utente_esterno foreign key (`utente_esterno_registrato_abbo`) references `utente_esterno_registrato_abbo` (`utente_esterno_registrato_oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `recensione`  add column  `serie_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `recensione`   add index fk_recensione_serie (`serie_oid`), add constraint fk_recensione_serie foreign key (`serie_oid`) references `serie` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `recensione`  add column  `film_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `recensione`   add index fk_recensione_film (`film_oid`), add constraint fk_recensione_film foreign key (`film_oid`) references `film` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `transazione`  add column  `film_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `transazione`   add index fk_transazione_film (`film_oid`), add constraint fk_transazione_film foreign key (`film_oid`) references `film` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `recensione`  add column  `utente_esterno_registrato_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `recensione`   add index fk_recensione_utente_esterno_r (`utente_esterno_registrato_oid`), add constraint fk_recensione_utente_esterno_r foreign key (`utente_esterno_registrato_oid`) references `utente_esterno_registrato` (`utente_oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `utente_esterno_registrato`  add column  `catalogo_personale_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `utente_esterno_registrato`   add index fk_utente_esterno_registrato_c (`catalogo_personale_oid`), add constraint fk_utente_esterno_registrato_c foreign key (`catalogo_personale_oid`) references `catalogo_personale` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `serie`  add column  `lingua_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `serie`   add index fk_serie_lingua (`lingua_oid`), add constraint fk_serie_lingua foreign key (`lingua_oid`) references `lingua` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `serie`  add column  `datadiuscita_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `serie`   add index fk_serie_datadiuscita (`datadiuscita_oid`), add constraint fk_serie_datadiuscita foreign key (`datadiuscita_oid`) references `datadiuscita` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `transazione`  add column  `datipagamento_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `transazione`   add index fk_transazione_datipagamento (`datipagamento_oid`), add constraint fk_transazione_datipagamento foreign key (`datipagamento_oid`) references `datipagamento` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `utente_esterno_registrato`  add column  `datipagamento_oid`  integer
+[28 dic 2021 16:33:38] DEBUG Executing statement:  alter table `utente_esterno_registrato`   add index fk_utente_esterno_registrato_d (`datipagamento_oid`), add constraint fk_utente_esterno_registrato_d foreign key (`datipagamento_oid`) references `datipagamento` (`oid`)
+[28 dic 2021 16:33:38] DEBUG Executing statement:    alter table `transazione`  add column  `abbonamento_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `transazione`   add index fk_transazione_abbonamento (`abbonamento_oid`), add constraint fk_transazione_abbonamento foreign key (`abbonamento_oid`) references `abbonamento` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `serie`  add column  `fasciadiprezzo_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `serie`   add index fk_serie_fasciadiprezzo (`fasciadiprezzo_oid`), add constraint fk_serie_fasciadiprezzo foreign key (`fasciadiprezzo_oid`) references `fasciadiprezzo` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `genere_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_genere (`genere_oid`), add constraint fk_film_genere foreign key (`genere_oid`) references `genere` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `lingua_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_lingua (`lingua_oid`), add constraint fk_film_lingua foreign key (`lingua_oid`) references `lingua` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `datadiuscita_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_datadiuscita (`datadiuscita_oid`), add constraint fk_film_datadiuscita foreign key (`datadiuscita_oid`) references `datadiuscita` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `fasciadiprezzo_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_fasciadiprezzo (`fasciadiprezzo_oid`), add constraint fk_film_fasciadiprezzo foreign key (`fasciadiprezzo_oid`) references `fasciadiprezzo` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `regista_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_regista (`regista_oid`), add constraint fk_film_regista foreign key (`regista_oid`) references `regista` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `film`  add column  `catalogo_generale_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `film`   add index fk_film_catalogo_generale (`catalogo_generale_oid`), add constraint fk_film_catalogo_generale foreign key (`catalogo_generale_oid`) references `catalogo_generale` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `serie`  add column  `catalogo_generale_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `serie`   add index fk_serie_catalogo_generale (`catalogo_generale_oid`), add constraint fk_serie_catalogo_generale foreign key (`catalogo_generale_oid`) references `catalogo_generale` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create table `catalogo_personale_film` ( `catalogo_personale_oid`  integer not null, `film_oid`  integer not null, primary key (`catalogo_personale_oid`, `film_oid`) )
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `catalogo_personale_film`   add index fk_catalogo_personale_film_cat (`catalogo_personale_oid`), add constraint fk_catalogo_personale_film_cat foreign key (`catalogo_personale_oid`) references `catalogo_personale` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `catalogo_personale_film`   add index fk_catalogo_personale_film_fil (`film_oid`), add constraint fk_catalogo_personale_film_fil foreign key (`film_oid`) references `film` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create table `catalogo_personale_serie` ( `catalogo_personale_oid`  integer not null, `serie_oid`  integer not null, primary key (`catalogo_personale_oid`, `serie_oid`) )
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `catalogo_personale_serie`   add index fk_catalogo_personale_serie_ca (`catalogo_personale_oid`), add constraint fk_catalogo_personale_serie_ca foreign key (`catalogo_personale_oid`) references `catalogo_personale` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `catalogo_personale_serie`   add index fk_catalogo_personale_serie_se (`serie_oid`), add constraint fk_catalogo_personale_serie_se foreign key (`serie_oid`) references `serie` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `transazione`  add column  `utente_esterno_registrato_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `transazione`   add index fk_transazione_utente_esterno (`utente_esterno_registrato_oid`), add constraint fk_transazione_utente_esterno foreign key (`utente_esterno_registrato_oid`) references `utente_esterno_registrato` (`utente_oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `transazione`  add column  `serie_oid`  integer
+[28 dic 2021 16:33:39] DEBUG Executing statement:  alter table `transazione`   add index fk_transazione_serie (`serie_oid`), add constraint fk_transazione_serie foreign key (`serie_oid`) references `serie` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `utente_esterno_registrato`   add index fk_utente_esterno_registrato_u (`utente_oid`), add constraint fk_utente_esterno_registrato_u foreign key (`utente_oid`) references `utente` (`oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    alter table `utente_esterno_registrato_abbo`   add index fk_utente_esterno_registrato_a (`utente_esterno_registrato_oid`), add constraint fk_utente_esterno_registrato_a foreign key (`utente_esterno_registrato_oid`) references `utente_esterno_registrato` (`utente_oid`)
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create view `seriepremiata_view` as select distinct AL1.`oid` as `oid` from  `serie` AL1 where AL1.`valutazione_della_critica` >= 4.5
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create view `serierecente_view` as select distinct AL1.`oid` as `oid` from  `serie` AL1 left outer join `datadiuscita` AL2 on AL1.`datadiuscita_oid`=AL2.`oid` where AL2.`anno` >= 2019
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create view `filmpremiato_view` as select distinct AL1.`oid` as `oid` from  `film` AL1 where AL1.`valutazione_della_critica` >= 4.5
+[28 dic 2021 16:33:39] DEBUG Executing statement:    create view `filmrecente_view` as select distinct AL1.`oid` as `oid` from  `film` AL1 left outer join `datadiuscita` AL2 on AL1.`datadiuscita_oid`=AL2.`oid` where AL2.`anno` >= 2019
+[28 dic 2021 16:33:39] DEBUG ================================================================================
+[28 dic 2021 16:33:39] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[28 dic 2021 16:33:39] INFO Database connection closed
+[28 dic 2021 16:33:39] DEBUG Total time: 2472 milliseconds

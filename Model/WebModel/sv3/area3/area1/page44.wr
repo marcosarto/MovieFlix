@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area3#area1#page44" name="Crea Data" gr:x="270" gr:y="1175">
+  <ContentUnits>
+    <EntryUnit id="sv3#area3#area1#page44#enu26" name="Inserisci dati Data" linkOrder="sv3#area3#area1#page44#enu26#ln116" gr:x="0" gr:y="0" fieldOrder="sv3#area3#area1#page44#enu26#fld151 sv3#area3#area1#page44#enu26#fld152 sv3#area3#area1#page44#enu26#fld153">
+      <Link id="sv3#area3#area1#page44#enu26#ln116" name="Flow56" to="sv3#area3#area1#cru11" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#area1#page44#enu26#ln116#par424" name="anno_anno" source="sv3#area3#area1#page44#enu26#fld151" target="sv3#area3#area1#cru11.ent19#att46"/>
+        <LinkParameter id="sv3#area3#area1#page44#enu26#ln116#par425" name="giorno_giorno" source="sv3#area3#area1#page44#enu26#fld153" target="sv3#area3#area1#cru11.ent19#att34"/>
+        <LinkParameter id="sv3#area3#area1#page44#enu26#ln116#par426" name="mese_mese" source="sv3#area3#area1#page44#enu26#fld152" target="sv3#area3#area1#cru11.ent19#att35"/>
+      </Link>
+      <Field id="sv3#area3#area1#page44#enu26#fld153" name="giorno" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area1#page44#enu26#fld152" name="mese" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area3#area1#page44#enu26#fld151" name="anno" type="integer" preloaded="true" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#area1#page44#enu26">
+          <layout:Link link="sv3#area3#area1#page44#enu26#ln116"/>
+          <layout:Field field="sv3#area3#area1#page44#enu26#fld151"/>
+          <layout:Field field="sv3#area3#area1#page44#enu26#fld152"/>
+          <layout:Field field="sv3#area3#area1#page44#enu26#fld153"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

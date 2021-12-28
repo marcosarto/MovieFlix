@@ -1,0 +1,60 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="60" id="sv2#area13#area14#page52" name="Dettagli recensione">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area13#area14#page52#dau8" name="Details8" entity="ent6" displayAttributes="ent6#att68 ent6#att69 ent6#att71 rel13#role26.ent3#att37 rel14#role27.ent2#att3">
+      <Selector id="sv2#area13#area14#page52#dau8#su45" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area14#page52#dau8#su45#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area13#area14#page52#dau8#ln138" name="Flow138" to="sv2#area13#area14#page52#mssu8" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area14#page52#dau8#ln138#par449" name="Elimina_Shown Messages" sourceValue="Elimina" target="sv2#area13#area14#page52#mssu8.shownMessages"/>
+        <LinkParameter id="sv2#area13#area14#page52#dau8#ln138#par450" name="oid_PASSING" source="data.ent6#att65" passing="true"/>
+      </Link>
+    </DataUnit>
+    <MultiMessageUnit gr:x="15" gr:y="190" id="sv2#area13#area14#page52#mssu8" name="Message8" linkOrder="sv2#area13#area14#page52#mssu8#ln139">
+      <Link id="sv2#area13#area14#page52#mssu8#ln139" name="Flow139" to="sv2#area13#area14#dlu18" type="normal" validate="true">
+        <LinkParameter id="sv2#area13#area14#page52#mssu8#ln139#par451" name="oid_PASSING_KeyCondition34 [oid]" sourceLinkParameter="sv2#area13#area14#page52#dau8#ln138#par450" target="sv2#area13#area14#dlu18#su46#kcond34.ent6#att65"/>
+      </Link>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page52#dau8">
+          <layout:Attribute attribute="ent6#att68"/>
+          <layout:Attribute attribute="ent6#att69"/>
+          <layout:Attribute attribute="ent6#att71"/>
+          <layout:Attribute attribute="rel13#role26.ent3#att37"/>
+          <layout:Attribute attribute="rel14#role27.ent2#att3"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page52#mssu8">
+          <layout:Link link="sv2#area13#area14#page52#mssu8#ln139"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

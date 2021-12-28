@@ -1,0 +1,20 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area13#area14" name="Area Amministrativa" defaultPage="sv2#area13#area14#page23" landmark="true" gr:x="0" gr:y="0" landmarks="sv2#area13#area14#page23">
+  <OperationUnits>
+    <DeleteUnit gr:x="555" gr:y="415" id="sv2#area13#area14#dlu17" name="Rimozione utente" entity="User">
+      <Selector id="sv2#area13#area14#dlu17#su44" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area14#dlu17#su44#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <DeleteUnit gr:x="245" gr:y="410" id="sv2#area13#area14#dlu18" name="Rimozione recensione" entity="ent6">
+      <Selector id="sv2#area13#area14#dlu18#su46" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area14#dlu18#su46#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit gr:x="1735" gr:y="405" id="sv2#area13#area14#mfu16" name="Cambia privilegi" entity="User">
+      <Selector id="sv2#area13#area14#mfu16#su47" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#area14#mfu16#su47#kcond35" name="KeyCondition35" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area13#area14#mfu16#oln55" name="OKFlow55" to="sv2#area13#area14#page23" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

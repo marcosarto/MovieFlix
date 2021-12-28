@@ -1,0 +1,63 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="400" gr:y="55" id="sv2#area13#area14#page50" name="Visualizza recensioni per utente">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv2#area13#area14#page50#inu25" name="Elenco recensioni" entity="ent6" displayAttributes="rel16#role32.userName rel14#role27.ent2#att3 rel13#role26.ent3#att37 ent6#att68 ent6#att69 ent6#att71" linkOrder="sv2#area13#area14#page50#inu25#ln130 sv2#area13#area14#page50#inu25#ln131">
+      <Link id="sv2#area13#area14#page50#inu25#ln130" name="Visualizza_Dettagli" to="sv2#area13#area14#page52#dau8" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area13#area14#page50#inu25#ln131" name="Rimuovi" to="sv2#area13#area14#dlu18" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page50#inu25">
+          <layout:Attribute attribute="rel16#role32.userName"/>
+          <layout:Attribute attribute="rel14#role27.ent2#att3"/>
+          <layout:Attribute attribute="rel13#role26.ent3#att37"/>
+          <layout:Attribute attribute="ent6#att68"/>
+          <layout:Attribute attribute="ent6#att69"/>
+          <layout:Attribute attribute="ent6#att71"/>
+          <layout:Link link="sv2#area13#area14#page50#inu25#ln130"/>
+          <layout:Link link="sv2#area13#area14#page50#inu25#ln131"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

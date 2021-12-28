@@ -1,0 +1,61 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1675" gr:y="0" id="sv2#area13#area14#page53" name="Gestione privilegi">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="65" id="sv2#area13#area14#page53#enu31" name="Privilegi" entity="User" fieldOrder="sv2#area13#area14#page53#enu31#fld102 sv2#area13#area14#page53#enu31#sfld41" linkOrder="sv2#area13#area14#page53#enu31#ln135">
+      <Field id="sv2#area13#area14#page53#enu31#fld102" name="userName" type="string" attribute="userName"/>
+      <SelectionField id="sv2#area13#area14#page53#enu31#sfld41" name="groups" type="string" modifiable="true"/>
+      <Link id="sv2#area13#area14#page53#enu31#ln135" name="Flow135" to="sv2#area13#area14#mfu16" type="normal" validate="true">
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par440" name="cognome_PASSING_cognome" sourceLinkParameter="sv2#area13#area14#page23#inu8#ln134#par400" target="sv2#area13#area14#mfu16.User#att103"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par441" name="data di nascita_PASSING_data di nascita" sourceLinkParameter="sv2#area13#area14#page23#inu8#ln134#par401" target="sv2#area13#area14#mfu16.User#att106"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par442" name="email_PASSING_email" sourceLinkParameter="sv2#area13#area14#page23#inu8#ln134#par413" target="sv2#area13#area14#mfu16.email"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par443" name="defaultGroup.oid_PASSING_Group.oid(defaultGroup)" target="sv2#area13#area14#mfu16.User2DefaultGroup.groupOID" source="sv2#area13#area14#page53#enu31#sfld41"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par444" name="Key [oid]_KeyCondition35 [oid]" source="key.userOID" target="sv2#area13#area14#mfu16#su47#kcond35.userOID"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par445" name="nome_PASSING_nome" sourceLinkParameter="sv2#area13#area14#page23#inu8#ln134#par414" target="sv2#area13#area14#mfu16.User#att105"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par446" name="password_PASSING_password" sourceLinkParameter="sv2#area13#area14#page23#inu8#ln134#par438" target="sv2#area13#area14#mfu16.password"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par447" name="userName_userName" source="sv2#area13#area14#page53#enu31#fld102" target="sv2#area13#area14#mfu16.userName"/>
+        <LinkParameter id="sv2#area13#area14#page53#enu31#ln135#par448" name="Utente Object_Utente Object" source="entityBean" target="sv2#area13#area14#mfu16.entityBeans"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="230" gr:y="145" id="sv2#area13#area14#page53#seu49" name="Select_groups" entity="Group">
+      <Link id="sv2#area13#area14#page53#seu49#ln133" name="Flow133" to="sv2#area13#area14#page53#enu31" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#area14#page53#seu49#ln133#par398" name="groupName_groups [label]" source="groupNameArray" target="sv2#area13#area14#page53#enu31#sfld41_label"/>
+        <LinkParameter id="sv2#area13#area14#page53#seu49#ln133#par399" name="oid_groups [output]" source="groupOIDArray" target="sv2#area13#area14#page53#enu31#sfld41_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#area14#page53#enu31">
+          <layout:Field field="sv2#area13#area14#page53#enu31#fld102"/>
+          <layout:Field field="sv2#area13#area14#page53#enu31#sfld41"/>
+          <layout:Link link="sv2#area13#area14#page53#enu31#ln135"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

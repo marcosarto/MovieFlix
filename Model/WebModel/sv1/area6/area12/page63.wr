@@ -1,0 +1,96 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area12#page63" name="Pagina descrizione contenuto Serie" gr:x="1515" gr:y="465">
+  <ContentUnits>
+    <DataUnit id="sv1#area6#area12#page63#dau13" name="Singola Serie" gr:x="5" gr:y="0" entity="ent3" displayAttributes="ent3#att37 ent3#att38 ent3#att39 ent3#att40 ent3#att41 ent3#att42 ent3#att43 ent3#att44 ent3#att45 ent3#att47 ent3#att48 ent3#att49 ent3#att50 ent3#att51 ent3#att78">
+      <Selector id="sv1#area6#area12#page63#dau13#su60" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#area12#page63#dau13#su60#kcond37" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area6#area12#page63#dau13#ln96" name="Flow45" to="sv1#area6#area12#page63#inu24" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area6#area12#page63#dau13#ln97" name="Flow6" to="sv1#area6#area12#page63#inu26" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <IndexUnit id="sv1#area6#area12#page63#inu24" name="lista episodi" linkOrder="sv1#area6#area12#page63#inu24#ln98" gr:x="190" gr:y="90" entity="ent4" displayAttributes="ent4#att53 ent4#att59">
+      <Selector id="sv1#area6#area12#page63#inu24#su61" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area6#area12#page63#inu24#su61#rcond4" name="RoleCondition1" predicate="in" implied="false" role="rel11#role22"/>
+      </Selector>
+      <Link id="sv1#area6#area12#page63#inu24#ln98" name="Flow74" to="sv1#area6#area12#page61#dau12" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+    <IndexUnit id="sv1#area6#area12#page63#inu26" name="Lista Recensioni" gr:x="0" gr:y="225" entity="ent6" displayAttributes="ent6#att68 ent6#att69 ent6#att71">
+      <Selector id="sv1#area6#area12#page63#inu26#su62" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area6#area12#page63#inu26#su62#rcond5" name="RoleCondition4" predicate="in" implied="false" role="rel13#role25"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page63#dau13">
+          <layout:Attribute attribute="ent3#att37"/>
+          <layout:Attribute attribute="ent3#att38"/>
+          <layout:Attribute attribute="ent3#att39"/>
+          <layout:Attribute attribute="ent3#att40"/>
+          <layout:Attribute attribute="ent3#att41"/>
+          <layout:Attribute attribute="ent3#att42"/>
+          <layout:Attribute attribute="ent3#att43"/>
+          <layout:Attribute attribute="ent3#att44"/>
+          <layout:Attribute attribute="ent3#att45"/>
+          <layout:Attribute attribute="ent3#att47"/>
+          <layout:Attribute attribute="ent3#att48"/>
+          <layout:Attribute attribute="ent3#att49"/>
+          <layout:Attribute attribute="ent3#att50"/>
+          <layout:Attribute attribute="ent3#att51"/>
+          <layout:Attribute attribute="ent3#att78"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page63#inu24">
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Link link="sv1#area6#area12#page63#inu24#ln98"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page63#inu26">
+          <layout:Attribute attribute="ent6#att68"/>
+          <layout:Attribute attribute="ent6#att69"/>
+          <layout:Attribute attribute="ent6#att71"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

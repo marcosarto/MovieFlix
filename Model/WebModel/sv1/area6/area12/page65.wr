@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area12#page65" name="Risultato ricerca" gr:x="965" gr:y="110">
+  <ContentUnits>
+    <IndexUnit id="sv1#area6#area12#page65#inu27" name="Lista Serie" linkOrder="sv1#area6#area12#page65#inu27#ln103" gr:x="0" gr:y="0" entity="ent3">
+      <Link id="sv1#area6#area12#page65#inu27#ln103" name="Flow18" to="sv1#area6#area12#page63#dau13" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="251,249,-309,-111"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page65#inu27">
+          <layout:Link link="sv1#area6#area12#page65#inu27#ln103"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

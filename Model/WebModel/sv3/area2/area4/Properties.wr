@@ -1,0 +1,196 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area2#area4" name="Area Catalogo" defaultPage="sv3#area2#area4#page38" landmarks="sv3#area2#area4#page38 sv3#area2#area4#page32 sv3#area2#area4#page40 sv3#area2#area4#page37" landmark="true" gr:x="0" gr:y="315">
+  <OperationUnits>
+    <CreateUnit id="sv3#area2#area4#cru11" name="Crea Film" gr:x="1970" gr:y="195" entity="ent2">
+      <KOLink id="sv3#area2#area4#cru11#kln30" name="KOFlow1" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#cru11#oln20" name="OKFlow4" to="sv3#area2#area4#page38" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit id="sv3#area2#area4#cru12" name="Crea Serie" gr:x="1900" gr:y="355" entity="ent3">
+      <KOLink id="sv3#area2#area4#cru12#kln31" name="KOFlow3" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#cru12#oln21" name="OKFlow2" to="sv3#area2#area4#page38" automaticCoupling="true"/>
+    </CreateUnit>
+    <ModifyUnit id="sv3#area2#area4#mfu12" name="Modifica Film" gr:x="2485" gr:y="1145" entity="ent2">
+      <Selector id="sv3#area2#area4#mfu12#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#mfu12#su13#kcond14" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#mfu12#oln22" name="OKFlow1" to="sv3#area2#area4#page36" automaticCoupling="true"/>
+      <KOLink id="sv3#area2#area4#mfu12#kln32" name="KOFlow2" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit id="sv3#area2#area4#mfu13" name="Modifica Serie" gr:x="2665" gr:y="1165" entity="ent3">
+      <Selector id="sv3#area2#area4#mfu13#su14" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#mfu13#su14#kcond19" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#mfu13#oln23" name="OKFlow5" to="sv3#area2#area4#page43" automaticCoupling="true" gr:bendpoints="-125,70,480,-95;-222,92,383,-73"/>
+      <KOLink id="sv3#area2#area4#mfu13#kln33" name="KOFlow4" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+    </ModifyUnit>
+    <DeleteUnit id="sv3#area2#area4#dlu14" name="Cancella film" gr:x="1280" gr:y="745" entity="ent2">
+      <Selector id="sv3#area2#area4#dlu14#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#dlu14#su16#kcond20" name="KeyCondition30" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#dlu14#oln24" name="OKFlow31" to="sv3#area2#area4#page38" automaticCoupling="true" gr:bendpoints="331,-84,-424,-204"/>
+      <KOLink id="sv3#area2#area4#dlu14#kln34" name="KOFlow31" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit id="sv3#area2#area4#dlu15" name="Cancella Serie" gr:x="2460" gr:y="985" entity="ent3">
+      <Selector id="sv3#area2#area4#dlu15#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#dlu15#su20#kcond21" name="KeyCondition31" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area2#area4#dlu15#kln35" name="KOFlow32" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#dlu15#oln25" name="OKFlow32" to="sv3#area2#area4#page38" automaticCoupling="true"/>
+    </DeleteUnit>
+    <CreateUnit id="sv3#area2#area4#cru13" name="Crea Episodio" gr:x="1815" gr:y="560" entity="ent4">
+      <OKLink id="sv3#area2#area4#cru13#oln26" name="OKFlow11" to="sv3#area2#area4#page38" automaticCoupling="true"/>
+      <KOLink id="sv3#area2#area4#cru13#kln36" name="KOFlow10" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit id="sv3#area2#area4#dlu16" name="Cancella Episodio" gr:x="2240" gr:y="1345" entity="ent4">
+      <Selector id="sv3#area2#area4#dlu16#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#dlu16#su22#kcond22" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#dlu16#oln27" name="OKFlow12" to="sv3#area2#area4#page43" automaticCoupling="true"/>
+      <KOLink id="sv3#area2#area4#dlu16#kln37" name="KOFlow11" to="sv3#area2#area4#page35" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv3#area2#area4#mfu14" name="Modifica Episodio" gr:x="2520" gr:y="1315" entity="ent4">
+      <Selector id="sv3#area2#area4#mfu14#su23" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#mfu14#su23#kcond23" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area2#area4#mfu14#kln38" name="KOFlow12" to="sv3#area2#area4#page35" automaticCoupling="true" gr:bendpoints="56,-353,136,417"/>
+      <OKLink id="sv3#area2#area4#mfu14#oln28" name="OKFlow13" to="sv3#area2#area4#page42" automaticCoupling="true"/>
+    </ModifyUnit>
+    <SwitchUnit id="sv3#area2#area4#switch1" name="tipo ricerca" gr:x="120" gr:y="850">
+      <OKLink id="sv3#area2#area4#switch1#oln29" name="OKFlow35" to="sv3#area2#area4#page33" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#switch1#oln30" name="OKFlow40" to="sv3#area2#area4#seu1" code="regista">
+        <LinkParameter id="sv3#area2#area4#switch1#oln30#par129" name="Parola_chiave_PASSING_AttCondition1" sourceLinkParameter="sv3#area2#area4#page40#enu24#ln64#par280" target="sv3#area2#area4#seu1#su24#acond1"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch1#oln31" name="OKFlow36" to="sv3#area2#area4#seu2" code="Anno">
+        <LinkParameter id="sv3#area2#area4#switch1#oln31#par130" name="Parola_chiave_PASSING_AttCondition4" sourceLinkParameter="sv3#area2#area4#page40#enu24#ln64#par280" target="sv3#area2#area4#seu2#su25#acond2"/>
+      </OKLink>
+      <Case value="regista"/>
+      <Case value="Anno"/>
+      <Case value="Genere"/>
+      <Case value="Lingua"/>
+      <Case value="fasciaPrezzo"/>
+      <OKLink id="sv3#area2#area4#switch1#oln32" name="OKFlow37" to="sv3#area2#area4#seu3" code="fasciaPrezzo" gr:bendpoints="155,100,-160,-125">
+        <LinkParameter id="sv3#area2#area4#switch1#oln32#par131" name="Parola_chiave_PASSING_AttCondition5" sourceLinkParameter="sv3#area2#area4#page40#enu24#ln64#par280" target="sv3#area2#area4#seu3#su26#acond3"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch1#oln33" name="OKFlow38" to="sv3#area2#area4#seu4" code="Lingua" gr:bendpoints="110,175,-210,-195">
+        <LinkParameter id="sv3#area2#area4#switch1#oln33#par132" name="Parola_chiave_PASSING_AttCondition6" sourceLinkParameter="sv3#area2#area4#page40#enu24#ln64#par280" target="sv3#area2#area4#seu4#su27#acond4"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch1#oln34" name="OKFlow39" to="sv3#area2#area4#seu5" code="Genere" gr:bendpoints="-94,96,-414,-429;-115,218,-435,-307">
+        <LinkParameter id="sv3#area2#area4#switch1#oln34#par133" name="Parola_chiave_PASSING_AttCondition7" sourceLinkParameter="sv3#area2#area4#page40#enu24#ln64#par280" target="sv3#area2#area4#seu5#su28#acond5"/>
+      </OKLink>
+    </SwitchUnit>
+    <SelectorUnit id="sv3#area2#area4#seu1" name="Serie_Regista" gr:x="580" gr:y="750" entity="ent3">
+      <Selector id="sv3#area2#area4#seu1#su24" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu1#su24#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att1"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu1#oln35" name="OKFlow42" to="sv3#area2#area4#inn1">
+        <LinkParameter id="sv3#area2#area4#seu1#oln35#par134" name="oid_Input" source="ent3#att36Array" target="sv3#area2#area4#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv3#area2#area4#inn1" name="control" gr:x="765" gr:y="1025">
+      <KOLink id="sv3#area2#area4#inn1#kln39" name="KOFlow35" to="sv3#area2#area4#page33" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#inn1#oln36" name="OKFlow43" to="sv3#area2#area4#page45#inu21">
+        <LinkParameter id="sv3#area2#area4#inn1#oln36#par135" name="Input Value_current oid" source="inputValue" target="sv3#area2#area4#page45#inu21.current.ent3#att36"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv3#area2#area4#seu2" name="Serie_Anno" gr:x="420" gr:y="870" entity="ent3">
+      <Selector id="sv3#area2#area4#seu2#su25" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu2#su25#acond2" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att43"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu2#oln37" name="OKFlow41" to="sv3#area2#area4#inn1">
+        <LinkParameter id="sv3#area2#area4#seu2#oln37#par136" name="oid_Input" source="ent3#att36Array" target="sv3#area2#area4#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu3" name="Serie_Prezzo" gr:x="420" gr:y="970" entity="ent3">
+      <Selector id="sv3#area2#area4#seu3#su26" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu3#su26#acond3" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att78"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu3#oln38" name="OKFlow44" to="sv3#area2#area4#inn1">
+        <LinkParameter id="sv3#area2#area4#seu3#oln38#par137" name="oid_Input" source="ent3#att36Array" target="sv3#area2#area4#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu4" name="Serie_Lingua" gr:x="425" gr:y="1085" entity="ent3">
+      <Selector id="sv3#area2#area4#seu4#su27" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu4#su27#acond4" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att40"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu4#oln39" name="OKFlow45" to="sv3#area2#area4#inn1">
+        <LinkParameter id="sv3#area2#area4#seu4#oln39#par138" name="oid_Input" source="ent3#att36Array" target="sv3#area2#area4#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu5" name="Serie_Genere" gr:x="420" gr:y="1200" entity="ent3">
+      <Selector id="sv3#area2#area4#seu5#su28" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu5#su28#acond5" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att39"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu5#oln40" name="OKFlow46" to="sv3#area2#area4#inn1">
+        <LinkParameter id="sv3#area2#area4#seu5#oln40#par139" name="oid_Input" source="ent3#att36Array" target="sv3#area2#area4#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu6" name="Film_Lingua" gr:x="555" gr:y="1815" entity="ent2">
+      <Selector id="sv3#area2#area4#seu6#su29" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu6#su29#acond6" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att6"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu6#oln41" name="OKFlow45" to="sv3#area2#area4#inn2">
+        <LinkParameter id="sv3#area2#area4#seu6#oln41#par140" name="oid_Input" source="ent2#att2Array" target="sv3#area2#area4#inn2.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv3#area2#area4#inn2" name="control" gr:x="820" gr:y="1715">
+      <KOLink id="sv3#area2#area4#inn2#kln40" name="KOFlow35" to="sv3#area2#area4#page39" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#inn2#oln42" name="OKFlow43" to="sv3#area2#area4#page21#inu13">
+        <LinkParameter id="sv3#area2#area4#inn2#oln42#par141" name="Input Value_current oid" source="inputValue" target="sv3#area2#area4#page21#inu13.current.ent2#att2"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv3#area2#area4#seu7" name="Film_Anno" gr:x="550" gr:y="1600" entity="ent2">
+      <Selector id="sv3#area2#area4#seu7#su30" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu7#su30#acond7" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att10"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu7#oln43" name="OKFlow41" to="sv3#area2#area4#inn2">
+        <LinkParameter id="sv3#area2#area4#seu7#oln43#par142" name="oid_Input" source="ent2#att2Array" target="sv3#area2#area4#inn2.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu8" name="Film_Prezzo" gr:x="550" gr:y="1700" entity="ent2">
+      <Selector id="sv3#area2#area4#seu8#su31" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu8#su31#acond8" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att62"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu8#oln44" name="OKFlow44" to="sv3#area2#area4#inn2">
+        <LinkParameter id="sv3#area2#area4#seu8#oln44#par143" name="oid_Input" source="ent2#att2Array" target="sv3#area2#area4#inn2.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SwitchUnit id="sv3#area2#area4#switch2" name="tipo ricerca" gr:x="250" gr:y="1580">
+      <OKLink id="sv3#area2#area4#switch2#oln45" name="OKFlow35" to="sv3#area2#area4#page39" automaticCoupling="true"/>
+      <OKLink id="sv3#area2#area4#switch2#oln46" name="OKFlow40" to="sv3#area2#area4#seu10" code="regista">
+        <LinkParameter id="sv3#area2#area4#switch2#oln46#par144" name="Parola_chiave_PASSING_AttCondition1" sourceLinkParameter="sv3#area2#area4#page37#enu23#ln55#par278" target="sv3#area2#area4#seu10#su33#acond10"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch2#oln47" name="OKFlow36" to="sv3#area2#area4#seu7" code="Anno">
+        <LinkParameter id="sv3#area2#area4#switch2#oln47#par145" name="Parola_chiave_PASSING_AttCondition4" sourceLinkParameter="sv3#area2#area4#page37#enu23#ln55#par278" target="sv3#area2#area4#seu7#su30#acond7"/>
+      </OKLink>
+      <Case value="regista"/>
+      <Case value="Anno"/>
+      <Case value="Genere"/>
+      <Case value="Lingua"/>
+      <Case value="fasciaPrezzo"/>
+      <OKLink id="sv3#area2#area4#switch2#oln48" name="OKFlow37" to="sv3#area2#area4#seu8" code="fasciaPrezzo" gr:bendpoints="155,100,-160,-125">
+        <LinkParameter id="sv3#area2#area4#switch2#oln48#par146" name="Parola_chiave_PASSING_AttCondition5" sourceLinkParameter="sv3#area2#area4#page37#enu23#ln55#par278" target="sv3#area2#area4#seu8#su31#acond8"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch2#oln49" name="OKFlow38" to="sv3#area2#area4#seu6" code="Lingua" gr:bendpoints="110,175,-210,-195">
+        <LinkParameter id="sv3#area2#area4#switch2#oln49#par147" name="Parola_chiave_PASSING_AttCondition6" sourceLinkParameter="sv3#area2#area4#page37#enu23#ln55#par278" target="sv3#area2#area4#seu6#su29#acond6"/>
+      </OKLink>
+      <OKLink id="sv3#area2#area4#switch2#oln50" name="OKFlow39" to="sv3#area2#area4#seu9" code="Genere" gr:bendpoints="-94,96,-414,-429;-115,218,-435,-307">
+        <LinkParameter id="sv3#area2#area4#switch2#oln50#par148" name="Parola_chiave_PASSING_AttCondition7" sourceLinkParameter="sv3#area2#area4#page37#enu23#ln55#par278" target="sv3#area2#area4#seu9#su32#acond9"/>
+      </OKLink>
+    </SwitchUnit>
+    <SelectorUnit id="sv3#area2#area4#seu9" name="Film_Genere" gr:x="550" gr:y="1930" entity="ent2">
+      <Selector id="sv3#area2#area4#seu9#su32" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu9#su32#acond9" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att5"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu9#oln51" name="OKFlow46" to="sv3#area2#area4#inn2">
+        <LinkParameter id="sv3#area2#area4#seu9#oln51#par149" name="oid_Input" source="ent2#att2Array" target="sv3#area2#area4#inn2.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area2#area4#seu10" name="Film_Regista" gr:x="545" gr:y="1500" entity="ent2">
+      <Selector id="sv3#area2#area4#seu10#su33" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#area4#seu10#su33#acond10" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att8"/>
+      </Selector>
+      <OKLink id="sv3#area2#area4#seu10#oln52" name="OKFlow42" to="sv3#area2#area4#inn2">
+        <LinkParameter id="sv3#area2#area4#seu10#oln52#par150" name="oid_Input" source="ent2#att2Array" target="sv3#area2#area4#inn2.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
+</Area>

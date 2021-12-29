@@ -1,0 +1,91 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area4#page43" name="Pagina descrizione contenuto Serie" gr:x="1850" gr:y="1245">
+  <ContentUnits>
+    <DataUnit id="sv3#area2#area4#page43#dau6" name="Singola Serie" linkOrder="sv3#area2#area4#page43#dau6#ln81" gr:x="0" gr:y="0" entity="ent3" displayAttributes="ent3#att37 ent3#att38 ent3#att39 ent3#att40 ent3#att41 ent3#att42 ent3#att43 ent3#att44 ent3#att45 ent3#att47 ent3#att48 ent3#att49 ent3#att50 ent3#att51 ent3#att78">
+      <Selector id="sv3#area2#area4#page43#dau6#su36" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#page43#dau6#su36#kcond26" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#area4#page43#dau6#ln81" name="Flow19" to="sv3#area2#area4#page41#enu25" type="normal" validate="true" gr:bendpoints="326,232,-449,-43">
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par315" name="oid_PASSING" source="data.ent3#att36" passing="true"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par316" name="cast_cast" source="data.ent3#att42" target="sv3#area2#area4#page41#enu25#fld79_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par317" name="et&#224; minima_et&#224; minima" source="data.ent3#att44" target="sv3#area2#area4#page41#enu25#fld80_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par318" name="locandina_locandina" source="data.ent3#att47" target="sv3#area2#area4#page41#enu25#fld82_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par319" name="sfondo_sfondo" source="data.ent3#att48" target="sv3#area2#area4#page41#enu25#fld83_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par320" name="sottotitoli_sottotitoli" source="data.ent3#att41" target="sv3#area2#area4#page41#enu25#fld78_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par321" name="stagioni_stagioni" source="data.ent3#att45" target="sv3#area2#area4#page41#enu25#fld81_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par322" name="titolo_titolo" source="data.ent3#att37" target="sv3#area2#area4#page41#enu25#fld76_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par323" name="trailer_trailer" source="data.ent3#att49" target="sv3#area2#area4#page41#enu25#fld84_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par324" name="trama_trama" source="data.ent3#att38" target="sv3#area2#area4#page41#enu25#fld77_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par325" name="valutazione della critica_valutazione della critica" source="data.ent3#att50" target="sv3#area2#area4#page41#enu25#fld85_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par326" name="valutazione media_valutazione media" source="data.ent3#att51" target="sv3#area2#area4#page41#enu25#fld86_slot"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par327" name="fascia_prezzo_fascia_prezzo - Preselection" source="data.ent3#att78" target="sv3#area2#area4#page41#enu25#sfld35_presel"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par328" name="genere_Genere - Preselection" source="data.ent3#att39" target="sv3#area2#area4#page41#enu25#sfld33_presel"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par329" name="lingua_Lingua - Preselection" source="data.ent3#att40" target="sv3#area2#area4#page41#enu25#sfld32_presel"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par330" name="anno_Anno - Preselection" source="data.ent3#att43" target="sv3#area2#area4#page41#enu25#sfld34_presel"/>
+        <LinkParameter id="sv3#area2#area4#page43#dau6#ln81#par331" name="regista_regista - Preselection" source="data.ent3#att1" target="sv3#area2#area4#page41#enu25#sfld36_presel"/>
+      </Link>
+      <Link id="sv3#area2#area4#page43#dau6#ln82" name="Flow123" to="sv3#area2#area4#dlu15" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area2#area4#page43#dau6#ln83" name="Flow45" to="sv3#area2#area4#page43#inu20" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <IndexUnit id="sv3#area2#area4#page43#inu20" name="lista episodi" linkOrder="sv3#area2#area4#page43#inu20#ln84" gr:x="185" gr:y="90" entity="ent4" displayAttributes="ent4#att53 ent4#att59">
+      <Selector id="sv3#area2#area4#page43#inu20#su37" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area2#area4#page43#inu20#su37#rcond2" name="RoleCondition1" predicate="in" implied="false" role="rel11#role22"/>
+      </Selector>
+      <Link id="sv3#area2#area4#page43#inu20#ln84" name="Flow60" to="sv3#area2#area4#page42#dau5" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area4#page43#dau6">
+          <layout:Link link="sv3#area2#area4#page43#dau6#ln81"/>
+          <layout:Attribute attribute="ent3#att37"/>
+          <layout:Attribute attribute="ent3#att38"/>
+          <layout:Attribute attribute="ent3#att39"/>
+          <layout:Attribute attribute="ent3#att40"/>
+          <layout:Attribute attribute="ent3#att41"/>
+          <layout:Attribute attribute="ent3#att42"/>
+          <layout:Attribute attribute="ent3#att43"/>
+          <layout:Attribute attribute="ent3#att44"/>
+          <layout:Attribute attribute="ent3#att45"/>
+          <layout:Attribute attribute="ent3#att47"/>
+          <layout:Attribute attribute="ent3#att48"/>
+          <layout:Attribute attribute="ent3#att49"/>
+          <layout:Attribute attribute="ent3#att50"/>
+          <layout:Attribute attribute="ent3#att51"/>
+          <layout:Attribute attribute="ent3#att78"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area4#page43#inu20">
+          <layout:Link link="sv3#area2#area4#page43#inu20#ln84"/>
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att59"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

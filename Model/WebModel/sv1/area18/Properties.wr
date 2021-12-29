@@ -1,8 +1,0 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area18" name="Area registrazione" landmark="true" gr:x="300" gr:y="425" defaultPage="sv1#area18#page30">
-  <OperationUnits>
-    <CreateUnit id="sv1#area18#cru7" name="Aggiungi catalogo personale" gr:x="0" gr:y="325" entity="ent12"/>
-    <CreateUnit id="sv1#area18#cru8" name="Aggiungi utente" gr:x="40" gr:y="195" entity="ent15">
-      <OKLink id="sv1#area18#cru8#oln14" name="OKFlow2" to="sv1#area18#cru7" automaticCoupling="true"/>
-    </CreateUnit>
-  </OperationUnits>
-</Area>

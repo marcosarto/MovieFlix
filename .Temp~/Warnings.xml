@@ -1,3 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Warnings></Warnings>
+<Warnings> 
+  <Warning xpath="id('sv1#area6#area9#lgu2')" rootXPath="id('sv1')" error="false" label="Login" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Login'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu29')" rootXPath="id('sv1')" error="false" label="Film_Regista" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Film_Regista'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu30')" rootXPath="id('sv1')" error="false" label="Serie_Genere" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Serie_Genere'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu31')" rootXPath="id('sv1')" error="false" label="Film_Genere" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Film_Genere'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu32')" rootXPath="id('sv1')" error="false" label="Film_Prezzo" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Film_Prezzo'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu33')" rootXPath="id('sv1')" error="false" label="Serie_Anno" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Serie_Anno'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu34')" rootXPath="id('sv1')" error="false" label="Serie_Regista" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Serie_Regista'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu35')" rootXPath="id('sv1')" error="false" label="Serie_Prezzo" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Serie_Prezzo'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu36')" rootXPath="id('sv1')" error="false" label="Serie_Lingua" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Serie_Lingua'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu37')" rootXPath="id('sv1')" error="false" label="Film_Lingua" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Film_Lingua'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area6#area12#seu38')" rootXPath="id('sv1')" error="false" label="Film_Anno" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Film_Anno'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page59#inu22')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Recensioni"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Recensioni'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page60#inu23')" rootXPath="id('sv1')" key="NO_DISPLAY_ATTRIBUTES" label="Lista Film"> 
+    <Message>No attributes to display are specified for the component 'Lista Film'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page60#inu23')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Film"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Film'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page63#inu24')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="lista episodi"> 
+    <Message>Sorting attribute are unspecified for the component 'lista episodi'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page63#inu26')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Recensioni"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Recensioni'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page65#inu27')" rootXPath="id('sv1')" key="NO_DISPLAY_ATTRIBUTES" label="Lista Serie"> 
+    <Message>No attributes to display are specified for the component 'Lista Serie'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page65#inu27')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Serie"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Serie'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu28')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista film premiati"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista film premiati'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu29')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista film recenti"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista film recenti'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu30')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista serie premiate"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista serie premiate'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu31')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista serie recenti"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista serie recenti'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu32')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Film"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Film'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page66#inu33')" rootXPath="id('sv1')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lista Serie"> 
+    <Message>Sorting attribute are unspecified for the component 'Lista Serie'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page64')" rootXPath="id('sv1')" key="" label="Pagina ricerca contenuto Film"> 
+    <Message>Security Warning: the page 'Pagina ricerca contenuto Film' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area9#page55')" rootXPath="id('sv1')" key="" label="Registrazione"> 
+    <Message>Security Warning: the page 'Registrazione' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area12#page57')" rootXPath="id('sv1')" key="" label="Pagina ricerca contenuto serie"> 
+    <Message>Security Warning: the page 'Pagina ricerca contenuto serie' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area6#area9#page56')" rootXPath="id('sv1')" key="" label="Login"> 
+    <Message>Security Warning: the page 'Login' is public but no captcha field is configured on its form component</Message> 
+  </Warning> 
+</Warnings>

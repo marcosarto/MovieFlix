@@ -7,6 +7,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="noleggi" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="prezzo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_abbo" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="utente_esterno_registrato_abbo" foreignColumnName="utente_esterno_registrato_oid" name="fk_abbonamento_utente_esterno" foreignTableName="utente_esterno_registrato_abbo" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="catalogo_generale" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -21,10 +22,14 @@
   <Table schema="" ignoreIndexes="false" name="catalogo_personale_film" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="catalogo_personale_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="film_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="catalogo_personale_oid" foreignColumnName="oid" name="fk_catalogo_personale_film_cat" foreignTableName="catalogo_personale" foreignSchemaName=""/>
+    <ForeignKey localColumnName="film_oid" foreignColumnName="oid" name="fk_catalogo_personale_film_fil" foreignTableName="film" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="catalogo_personale_serie" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="catalogo_personale_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="serie_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="catalogo_personale_oid" foreignColumnName="oid" name="fk_catalogo_personale_serie_ca" foreignTableName="catalogo_personale" foreignSchemaName=""/>
+    <ForeignKey localColumnName="serie_oid" foreignColumnName="oid" name="fk_catalogo_personale_serie_se" foreignTableName="serie" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="datadiuscita" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -46,6 +51,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="durata" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="stagione" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="serie_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="serie_oid" foreignColumnName="oid" name="fk_episodio_serie" foreignTableName="serie" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="fasciadiprezzo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -72,6 +78,12 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="fasciadiprezzo_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="regista_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="catalogo_generale_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="catalogo_generale_oid" foreignColumnName="oid" name="fk_film_catalogo_generale" foreignTableName="catalogo_generale" foreignSchemaName=""/>
+    <ForeignKey localColumnName="datadiuscita_oid" foreignColumnName="oid" name="fk_film_datadiuscita" foreignTableName="datadiuscita" foreignSchemaName=""/>
+    <ForeignKey localColumnName="fasciadiprezzo_oid" foreignColumnName="oid" name="fk_film_fasciadiprezzo" foreignTableName="fasciadiprezzo" foreignSchemaName=""/>
+    <ForeignKey localColumnName="genere_oid" foreignColumnName="oid" name="fk_film_genere" foreignTableName="genere" foreignSchemaName=""/>
+    <ForeignKey localColumnName="lingua_oid" foreignColumnName="oid" name="fk_film_lingua" foreignTableName="lingua" foreignSchemaName=""/>
+    <ForeignKey localColumnName="regista_oid" foreignColumnName="oid" name="fk_film_regista" foreignTableName="regista" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="genere" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -81,10 +93,13 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="group_module" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_group_module_group" foreignTableName="group" foreignSchemaName=""/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="lingua" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -103,6 +118,9 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="serie_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="film_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="film_oid" foreignColumnName="oid" name="fk_recensione_film" foreignTableName="film" foreignSchemaName=""/>
+    <ForeignKey localColumnName="serie_oid" foreignColumnName="oid" name="fk_recensione_serie" foreignTableName="serie" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_esterno_registrato_oid" foreignColumnName="utente_oid" name="fk_recensione_utente_esterno_r" foreignTableName="utente_esterno_registrato" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="regista" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -126,6 +144,11 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="datadiuscita_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="fasciadiprezzo_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="catalogo_generale_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="catalogo_generale_oid" foreignColumnName="oid" name="fk_serie_catalogo_generale" foreignTableName="catalogo_generale" foreignSchemaName=""/>
+    <ForeignKey localColumnName="datadiuscita_oid" foreignColumnName="oid" name="fk_serie_datadiuscita" foreignTableName="datadiuscita" foreignSchemaName=""/>
+    <ForeignKey localColumnName="fasciadiprezzo_oid" foreignColumnName="oid" name="fk_serie_fasciadiprezzo" foreignTableName="fasciadiprezzo" foreignSchemaName=""/>
+    <ForeignKey localColumnName="genere_oid" foreignColumnName="oid" name="fk_serie_genere" foreignTableName="genere" foreignSchemaName=""/>
+    <ForeignKey localColumnName="lingua_oid" foreignColumnName="oid" name="fk_serie_lingua" foreignTableName="lingua" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="transazione" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -137,10 +160,17 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="abbonamento_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="serie_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="abbonamento_oid" foreignColumnName="oid" name="fk_transazione_abbonamento" foreignTableName="abbonamento" foreignSchemaName=""/>
+    <ForeignKey localColumnName="datipagamento_oid" foreignColumnName="oid" name="fk_transazione_datipagamento" foreignTableName="datipagamento" foreignSchemaName=""/>
+    <ForeignKey localColumnName="film_oid" foreignColumnName="oid" name="fk_transazione_film" foreignTableName="film" foreignSchemaName=""/>
+    <ForeignKey localColumnName="serie_oid" foreignColumnName="oid" name="fk_transazione_serie" foreignTableName="serie" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_esterno_registrato_oid" foreignColumnName="utente_oid" name="fk_transazione_utente_esterno" foreignTableName="utente_esterno_registrato" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group_group" foreignTableName="group" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_oid" foreignColumnName="oid" name="fk_user_group_utente" foreignTableName="utente" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="utente" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -151,14 +181,19 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="nome" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="DATE" size="10" decimalDigits="0" name="data_di_nascita" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_utente_group" foreignTableName="group" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="utente_esterno_registrato" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="catalogo_personale_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="datipagamento_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="catalogo_personale_oid" foreignColumnName="oid" name="fk_utente_esterno_registrato_c" foreignTableName="catalogo_personale" foreignSchemaName=""/>
+    <ForeignKey localColumnName="datipagamento_oid" foreignColumnName="oid" name="fk_utente_esterno_registrato_d" foreignTableName="datipagamento" foreignSchemaName=""/>
+    <ForeignKey localColumnName="utente_oid" foreignColumnName="oid" name="fk_utente_esterno_registrato_u" foreignTableName="utente" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="utente_esterno_registrato_abbo" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="utente_esterno_registrato_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="utente_esterno_registrato_oid" foreignColumnName="utente_oid" name="fk_utente_esterno_registrato_a" foreignTableName="utente_esterno_registrato" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="filmpremiato_view" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="false" notNull="true"/>

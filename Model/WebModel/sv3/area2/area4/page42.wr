@@ -1,0 +1,45 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area4#page42" name="Pagina descrizione episodi" gr:x="1885" gr:y="1520">
+  <ContentUnits>
+    <DataUnit id="sv3#area2#area4#page42#dau5" name="Dettagli Episodio" linkOrder="sv3#area2#area4#page42#dau5#ln80" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att53 ent4#att54 ent4#att56 ent4#att58 ent4#att59 ent4#att79">
+      <Selector id="sv3#area2#area4#page42#dau5#su35" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#page42#dau5#su35#kcond25" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#area4#page42#dau5#ln79" name="Flow21" to="sv3#area2#area4#dlu16" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area2#area4#page42#dau5#ln80" name="Flow62" to="sv3#area2#area4#page44#enu26" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par308" name="cast_cast" source="data.ent4#att56" target="sv3#area2#area4#page44#enu26#fld89_slot"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par309" name="durata_durata" source="data.ent4#att58" target="sv3#area2#area4#page44#enu26#fld88_slot"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par310" name="titolo_serie_Serie - Preselection" source="data.ent4#att79" target="sv3#area2#area4#page44#enu26#sfld37_presel"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par311" name="stagione_stagione" source="data.ent4#att59" target="sv3#area2#area4#page44#enu26#fld87_slot"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par312" name="titolo_titolo" source="data.ent4#att53" target="sv3#area2#area4#page44#enu26#fld91_slot"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par313" name="trama_trama" source="data.ent4#att54" target="sv3#area2#area4#page44#enu26#fld90_slot"/>
+        <LinkParameter id="sv3#area2#area4#page42#dau5#ln80#par314" name="oid_PASSING" source="data.ent4#att52" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area4#page42#dau5">
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att54"/>
+          <layout:Attribute attribute="ent4#att56"/>
+          <layout:Attribute attribute="ent4#att58"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att79"/>
+          <layout:Link link="sv3#area2#area4#page42#dau5#ln80"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

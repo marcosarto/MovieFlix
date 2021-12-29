@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area12#page61" name="Pagina descrizione episodi" gr:x="1115" gr:y="705">
+  <ContentUnits>
+    <DataUnit id="sv1#area6#area12#page61#dau12" name="Dettagli Episodio" gr:x="0" gr:y="0" entity="ent4" displayAttributes="ent4#att53 ent4#att54 ent4#att56 ent4#att58 ent4#att59 ent4#att79">
+      <Selector id="sv1#area6#area12#page61#dau12#su59" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#area12#page61#dau12#su59#kcond36" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page61#dau12">
+          <layout:Attribute attribute="ent4#att53"/>
+          <layout:Attribute attribute="ent4#att54"/>
+          <layout:Attribute attribute="ent4#att56"/>
+          <layout:Attribute attribute="ent4#att58"/>
+          <layout:Attribute attribute="ent4#att59"/>
+          <layout:Attribute attribute="ent4#att79"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

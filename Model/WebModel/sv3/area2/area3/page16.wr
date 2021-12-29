@@ -1,0 +1,38 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page16" name="Modifica Prezzi" gr:x="245" gr:y="1445">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page16#enu14" name="Inserisci dati fascia" linkOrder="sv3#area2#area3#page16#enu14#ln18" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page16#enu14#fld26 sv3#area2#area3#page16#enu14#fld25 sv3#area2#area3#page16#enu14#fld24">
+      <Link id="sv3#area2#area3#page16#enu14#ln18" name="Flow58" to="sv3#area2#area3#mfu11" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page16#enu14#ln18#par117" name="fascia_fascia_prezzo" source="sv3#area2#area3#page16#enu14#fld24" target="sv3#area2#area3#mfu11.ent22#att93"/>
+        <LinkParameter id="sv3#area2#area3#page16#enu14#ln18#par118" name="oid_PASSING_KeyCondition1 [oid]" sourceLinkParameter="sv3#area2#area3#page19#inu11#ln22#par126" target="sv3#area2#area3#mfu11#su12#kcond12.ent22#att60"/>
+        <LinkParameter id="sv3#area2#area3#page16#enu14#ln18#par119" name="prezzo_acquisto_prezzo_acquisto" source="sv3#area2#area3#page16#enu14#fld26" target="sv3#area2#area3#mfu11.ent22#att91"/>
+        <LinkParameter id="sv3#area2#area3#page16#enu14#ln18#par120" name="prezzo_noleggio_prezzo_noleggio" source="sv3#area2#area3#page16#enu14#fld25" target="sv3#area2#area3#mfu11.ent22#att92"/>
+      </Link>
+      <Field id="sv3#area2#area3#page16#enu14#fld24" name="fascia" type="boolean" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area3#page16#enu14#fld25" name="prezzo_noleggio" type="float" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area3#page16#enu14#fld26" name="prezzo_acquisto" type="float" preloaded="true" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page16#enu14">
+          <layout:Link link="sv3#area2#area3#page16#enu14#ln18"/>
+          <layout:Field field="sv3#area2#area3#page16#enu14#fld26"/>
+          <layout:Field field="sv3#area2#area3#page16#enu14#fld25"/>
+          <layout:Field field="sv3#area2#area3#page16#enu14#fld24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,67 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area4#page44" name="Pagina Modifica Episodio" gr:x="1765" gr:y="1720">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area4#page44#enu26" name="Modifica Episodio" linkOrder="sv3#area2#area4#page44#enu26#ln85" gr:x="225" gr:y="0" fieldOrder="sv3#area2#area4#page44#enu26#fld91 sv3#area2#area4#page44#enu26#fld90 sv3#area2#area4#page44#enu26#fld89 sv3#area2#area4#page44#enu26#fld88 sv3#area2#area4#page44#enu26#fld87 sv3#area2#area4#page44#enu26#sfld37">
+      <SelectionField id="sv3#area2#area4#page44#enu26#sfld37" name="Serie" type="string" modifiable="true"/>
+      <Field id="sv3#area2#area4#page44#enu26#fld87" name="stagione" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area4#page44#enu26#fld88" name="durata" type="integer" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area4#page44#enu26#fld89" name="cast" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area4#page44#enu26#fld90" name="trama" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#area2#area4#page44#enu26#fld91" name="titolo" type="string" preloaded="true" modifiable="true"/>
+      <Link id="sv3#area2#area4#page44#enu26#ln85" name="Flow64" to="sv3#area2#area4#mfu14" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par332" name="cast_cast" source="sv3#area2#area4#page44#enu26#fld89" target="sv3#area2#area4#mfu14.ent4#att56"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par333" name="durata_durata" source="sv3#area2#area4#page44#enu26#fld88" target="sv3#area2#area4#mfu14.ent4#att58"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par334" name="Serie_Serie.oid(EpisodioToSerie)" source="sv3#area2#area4#page44#enu26#sfld37" target="sv3#area2#area4#mfu14.rel11#role21.ent3#att36"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par335" name="stagione_stagione" source="sv3#area2#area4#page44#enu26#fld87" target="sv3#area2#area4#mfu14.ent4#att59"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par336" name="titolo_titolo" source="sv3#area2#area4#page44#enu26#fld91" target="sv3#area2#area4#mfu14.ent4#att53"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par337" name="trama_trama" source="sv3#area2#area4#page44#enu26#fld90" target="sv3#area2#area4#mfu14.ent4#att54"/>
+        <LinkParameter id="sv3#area2#area4#page44#enu26#ln85#par338" name="oid_PASSING_KeyCondition14 [oid]" sourceLinkParameter="sv3#area2#area4#page42#dau5#ln80#par314" target="sv3#area2#area4#mfu14#su23#kcond23.ent4#att52"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv3#area2#area4#page44#seu28" name="Seleziona Serie" gr:x="0" gr:y="0" entity="ent3">
+      <Link id="sv3#area2#area4#page44#seu28#ln86" name="Flow63" to="sv3#area2#area4#page44#enu26" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#area4#page44#seu28#ln86#par339" name="oid_Serie [label]" source="ent3#att36Array" target="sv3#area2#area4#page44#enu26#sfld37_label"/>
+        <LinkParameter id="sv3#area2#area4#page44#seu28#ln86#par340" name="titolo_Serie [output]" source="ent3#att37Array" target="sv3#area2#area4#page44#enu26#sfld37_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area4#page44#enu26">
+          <layout:Field field="sv3#area2#area4#page44#enu26#fld91"/>
+          <layout:Field field="sv3#area2#area4#page44#enu26#fld90"/>
+          <layout:Field field="sv3#area2#area4#page44#enu26#fld89"/>
+          <layout:Field field="sv3#area2#area4#page44#enu26#fld88"/>
+          <layout:Field field="sv3#area2#area4#page44#enu26#fld87"/>
+          <layout:Field field="sv3#area2#area4#page44#enu26#sfld37"/>
+          <layout:Link link="sv3#area2#area4#page44#enu26#ln85"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

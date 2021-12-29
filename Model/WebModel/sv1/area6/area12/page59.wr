@@ -1,0 +1,70 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area12#page59" name="Pagina descrizione contenuto Film" gr:x="1095" gr:y="510">
+  <ContentUnits>
+    <DataUnit id="sv1#area6#area12#page59#dau10" name="Singolo film" gr:x="0" gr:y="0" entity="ent2" displayAttributes="ent2#att3 ent2#att4 ent2#att5 ent2#att6 ent2#att7 ent2#att8 ent2#att9 ent2#att10 ent2#att11 ent2#att12 ent2#att14 ent2#att15 ent2#att16 ent2#att17 ent2#att18 ent2#att62">
+      <Selector id="sv1#area6#area12#page59#dau10#su57" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#area12#page59#dau10#su57#kcond31" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area6#area12#page59#dau10#ln94" name="Flow3" to="sv1#area6#area12#page59#inu22" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <IndexUnit id="sv1#area6#area12#page59#inu22" name="Lista Recensioni" gr:x="165" gr:y="35" entity="ent6" displayAttributes="ent6#att68 ent6#att69 ent6#att71">
+      <Selector id="sv1#area6#area12#page59#inu22#su58" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area6#area12#page59#inu22#su58#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel14#role28"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page59#dau10">
+          <layout:Attribute attribute="ent2#att3"/>
+          <layout:Attribute attribute="ent2#att4"/>
+          <layout:Attribute attribute="ent2#att5"/>
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att8"/>
+          <layout:Attribute attribute="ent2#att9"/>
+          <layout:Attribute attribute="ent2#att10"/>
+          <layout:Attribute attribute="ent2#att11"/>
+          <layout:Attribute attribute="ent2#att12"/>
+          <layout:Attribute attribute="ent2#att14"/>
+          <layout:Attribute attribute="ent2#att15"/>
+          <layout:Attribute attribute="ent2#att16"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att18"/>
+          <layout:Attribute attribute="ent2#att62"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page59#inu22">
+          <layout:Attribute attribute="ent6#att68"/>
+          <layout:Attribute attribute="ent6#att69"/>
+          <layout:Attribute attribute="ent6#att71"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

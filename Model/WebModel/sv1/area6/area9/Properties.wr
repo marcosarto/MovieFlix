@@ -1,0 +1,30 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area6#area9" name="Area registrazione" defaultPage="sv1#area6#area9#page55" landmarks="sv1#area6#area9#page55 sv1#area6#area9#page56" landmark="true" gr:x="0" gr:y="100">
+  <OperationUnits>
+    <CreateUnit id="sv1#area6#area9#cru15" name="Aggiungi catalogo personale" gr:x="0" gr:y="320" entity="ent12">
+      <OKLink id="sv1#area6#area9#cru15#oln56" name="OKFlow14" to="sv1#area6#area9#cnu1">
+        <LinkParameter id="sv1#area6#area9#cru15#oln56#par365" name="oid_KeyCondition20 [oid] [Catalogo_personale] [Source]" source="ent12#att83Array" target="sv1#area6#area9#cnu1#su40#kcond29.ent12#att83"/>
+        <LinkParameter id="sv1#area6#area9#cru15#oln56#par366" name="oid_PASSING_KeyCondition21 [oid] [Utente_esterno_registrato] [Target]" sourceLinkParameter="sv1#area6#area9#cru16#oln57#par367" target="sv1#area6#area9#cnu1#su41#kcond30.userOID"/>
+      </OKLink>
+      <KOLink id="sv1#area6#area9#cru15#kln42" name="KOFlow14" to="sv1#area6#page48" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit id="sv1#area6#area9#cru16" name="Aggiungi utente" gr:x="20" gr:y="185" entity="ent15">
+      <OKLink id="sv1#area6#area9#cru16#oln57" name="OKFlow2" to="sv1#area6#area9#cru15">
+        <LinkParameter id="sv1#area6#area9#cru16#oln57#par367" name="oid_PASSING" source="userOIDArray" passing="true"/>
+      </OKLink>
+      <KOLink id="sv1#area6#area9#cru16#kln43" name="KOFlow13" to="sv1#area6#page48" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv1#area6#area9#cnu1" name="Connetti catalogo ad utente" gr:x="0" gr:y="445" relationship="rel18#role35">
+      <SourceSelector id="sv1#area6#area9#cnu1#su40" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#area9#cnu1#su40#kcond29" name="KeyCondition20" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv1#area6#area9#cnu1#su41" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#area9#cnu1#su41#kcond30" name="KeyCondition21" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv1#area6#area9#cnu1#kln44" name="KOFlow15" to="sv1#area6#page48" automaticCoupling="true"/>
+      <OKLink id="sv1#area6#area9#cnu1#oln58" name="OKFlow15" to="sv1#area6#area9#page56" automaticCoupling="true"/>
+    </ConnectUnit>
+    <LoginUnit id="sv1#area6#area9#lgu2" name="Login" gr:x="95" gr:y="915">
+      <KOLink id="sv1#area6#area9#lgu2#kln45" name="KOFlow16" to="sv1#area6#area9#page56" automaticCoupling="true"/>
+    </LoginUnit>
+  </OperationUnits>
+</Area>

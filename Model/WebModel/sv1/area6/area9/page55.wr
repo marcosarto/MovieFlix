@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area9#page55" name="Registrazione" landmark="true" gr:x="5" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv1#area6#area9#page55#enu28" name="Registra" linkOrder="sv1#area6#area9#page55#enu28#ln91" gr:x="0" gr:y="0" fieldOrder="sv1#area6#area9#page55#enu28#fld104 sv1#area6#area9#page55#enu28#fld103 sv1#area6#area9#page55#enu28#fld98 sv1#area6#area9#page55#enu28#fld110 sv1#area6#area9#page55#enu28#fld106 sv1#area6#area9#page55#enu28#fld105" entity="ent15">
+      <Field id="sv1#area6#area9#page55#enu28#fld98" name="Password" type="string" modifiable="true"/>
+      <Field id="sv1#area6#area9#page55#enu28#fld103" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#area6#area9#page55#enu28#fld104" name="e-mail" type="string" modifiable="true"/>
+      <Link id="sv1#area6#area9#page55#enu28#ln91" name="Flow2" to="sv1#area6#area9#cru16" type="normal" validate="true">
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par368" name="Cognome_cognome" source="sv1#area6#area9#page55#enu28#fld106" target="sv1#area6#area9#cru16.User#att103"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par369" name="Data_Nascita_data di nascita" source="sv1#area6#area9#page55#enu28#fld105" target="sv1#area6#area9#cru16.User#att106"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par370" name="e-mail_email" source="sv1#area6#area9#page55#enu28#fld98" target="sv1#area6#area9#cru16.password"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par371" name="Nome_nome" source="sv1#area6#area9#page55#enu28#fld110" target="sv1#area6#area9#cru16.User#att105"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par372" name="Password_password" source="sv1#area6#area9#page55#enu28#fld103" target="sv1#area6#area9#cru16.userName"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par378" name="Username_userName" source="sv1#area6#area9#page55#enu28#fld104" target="sv1#area6#area9#cru16.email"/>
+        <LinkParameter id="sv1#area6#area9#page55#enu28#ln91#par431" name="3_Group.oid(defaultGroup)" sourceValue="3" target="sv1#area6#area9#cru16.User2DefaultGroup.groupOID"/>
+      </Link>
+      <Field id="sv1#area6#area9#page55#enu28#fld105" name="Data_Nascita" type="date" modifiable="true"/>
+      <Field id="sv1#area6#area9#page55#enu28#fld106" name="Cognome" type="string" modifiable="true"/>
+      <Field id="sv1#area6#area9#page55#enu28#fld110" name="Nome" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area9#page55#enu28">
+          <layout:Link link="sv1#area6#area9#page55#enu28#ln91"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld104"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld103"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld98"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld110"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld106"/>
+          <layout:Field field="sv1#area6#area9#page55#enu28#fld105"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,79 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area4#page36" name="Pagina descrizione contenuto Film" gr:x="1270" gr:y="975">
+  <ContentUnits>
+    <DataUnit id="sv3#area2#area4#page36#dau4" name="Singolo film" linkOrder="sv3#area2#area4#page36#dau4#ln53" gr:x="0" gr:y="0" entity="ent2" displayAttributes="ent2#att3 ent2#att4 ent2#att5 ent2#att6 ent2#att7 ent2#att8 ent2#att9 ent2#att10 ent2#att11 ent2#att12 ent2#att14 ent2#att15 ent2#att16 ent2#att17 ent2#att18 ent2#att62">
+      <Selector id="sv3#area2#area4#page36#dau4#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#area4#page36#dau4#su34#kcond24" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#area4#page36#dau4#ln53" name="Flow13" to="sv3#area2#area4#page34#enu22" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par243" name="cast_cast" source="data.ent2#att9" target="sv3#area2#area4#page34#enu22#fld64_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par244" name="durata_durata" source="data.ent2#att12" target="sv3#area2#area4#page34#enu22#fld67_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par245" name="et&#224; minima_et&#224; minima" source="data.ent2#att11" target="sv3#area2#area4#page34#enu22#fld66_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par250" name="locandina_locandina" source="data.ent2#att14" target="sv3#area2#area4#page34#enu22#fld69_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par254" name="sfondo_sfondo" source="data.ent2#att15" target="sv3#area2#area4#page34#enu22#fld70_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par257" name="sottotitoli_sottotitoli" source="data.ent2#att7" target="sv3#area2#area4#page34#enu22#fld62_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par260" name="titolo_titolo" source="data.ent2#att3" target="sv3#area2#area4#page34#enu22#fld58_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par261" name="trailer_trailer" source="data.ent2#att16" target="sv3#area2#area4#page34#enu22#fld71_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par262" name="trama_trama" source="data.ent2#att4" target="sv3#area2#area4#page34#enu22#fld59_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par265" name="valutazione della critica_valutazione della critica" source="data.ent2#att17" target="sv3#area2#area4#page34#enu22#fld72_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par269" name="valutazione media_valutazione media" source="data.ent2#att18" target="sv3#area2#area4#page34#enu22#fld73_slot"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par271" name="oid_PASSING" source="data.ent2#att2" passing="true"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par272" name="anno_Anno - Preselection" source="data.ent2#att10" target="sv3#area2#area4#page34#enu22#sfld27_presel"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par273" name="genere_Genere - Preselection" source="data.ent2#att5" target="sv3#area2#area4#page34#enu22#sfld25_presel"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par274" name="lingua_Lingua - Preselection" source="data.ent2#att6" target="sv3#area2#area4#page34#enu22#sfld26_presel"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par275" name="regista_Regista - Preselection" source="data.ent2#att8" target="sv3#area2#area4#page34#enu22#sfld28_presel"/>
+        <LinkParameter id="sv3#area2#area4#page36#dau4#ln53#par276" name="fascia_prezzo_fascia_prezzo - Preselection" source="data.ent2#att62" target="sv3#area2#area4#page34#enu22#sfld29_presel"/>
+      </Link>
+      <Link id="sv3#area2#area4#page36#dau4#ln54" name="Flow122" to="sv3#area2#area4#dlu14" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area4#page36#dau4">
+          <layout:Link link="sv3#area2#area4#page36#dau4#ln53"/>
+          <layout:Attribute attribute="ent2#att3"/>
+          <layout:Attribute attribute="ent2#att4"/>
+          <layout:Attribute attribute="ent2#att5"/>
+          <layout:Attribute attribute="ent2#att6"/>
+          <layout:Attribute attribute="ent2#att7"/>
+          <layout:Attribute attribute="ent2#att8"/>
+          <layout:Attribute attribute="ent2#att9"/>
+          <layout:Attribute attribute="ent2#att10"/>
+          <layout:Attribute attribute="ent2#att11"/>
+          <layout:Attribute attribute="ent2#att12"/>
+          <layout:Attribute attribute="ent2#att14"/>
+          <layout:Attribute attribute="ent2#att15"/>
+          <layout:Attribute attribute="ent2#att16"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att18"/>
+          <layout:Attribute attribute="ent2#att62"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page17" name="Pagina gestione registi" linkOrder="sv3#area2#area3#page17#ln21" landmark="true" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv3#area2#area3#page17#inu10" name="Lista registi" linkOrder="sv3#area2#area3#page17#inu10#ln19 sv3#area2#area3#page17#inu10#ln20" gr:x="0" gr:y="0" entity="ent23" displayAttributes="ent23#att81">
+      <Link id="sv3#area2#area3#page17#inu10#ln19" name="Flow57" to="sv3#area2#area3#page15#enu11" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page17#inu10#ln19#par121" name="oid_PASSING" source="data[].ent23#att80" passing="true"/>
+        <LinkParameter id="sv3#area2#area3#page17#inu10#ln19#par122" name="NomeCognome_Nome_cognome" source="data[].ent23#att81" target="sv3#area2#area3#page15#enu11#fld23_slot"/>
+      </Link>
+      <Link id="sv3#area2#area3#page17#inu10#ln20" name="Flow59" to="sv3#area2#area3#dlu9" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page17#inu10">
+          <layout:Attribute attribute="ent23#att81"/>
+          <layout:Link link="sv3#area2#area3#page17#inu10#ln19"/>
+          <layout:Link link="sv3#area2#area3#page17#inu10#ln20"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area2#area3#page17#ln21" name="Flow55" to="sv3#area2#area3#page11" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

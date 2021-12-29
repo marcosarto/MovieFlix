@@ -1,9 +1,0 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area17" name="Login" landmark="true" gr:x="1360" gr:y="985" defaultPage="sv1#area17#page28">
-  <OperationUnits>
-    <LoginUnit id="sv1#area17#lgu1" name="Accedi" gr:x="300" gr:y="245">
-      <KOLink id="sv1#area17#lgu1#kln16" name="KOFlow15" to="sv1#area17#page29#mssu5">
-        <LinkParameter id="sv1#area17#lgu1#kln16#par183" name="Exception_Shown Messages" source="errorMessage" target="sv1#area17#page29#mssu5.shownMessages"/>
-      </KOLink>
-    </LoginUnit>
-  </OperationUnits>
-</Area>

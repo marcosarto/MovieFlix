@@ -68,23 +68,24 @@
     <Attribute id="ent2#att18" name="valutazione media" type="float" db:column="valutazione_media"/>
     <Attribute id="ent2#att62" name="fascia_prezzo" type="boolean" derivationQuery="simpleImported::Self.rel29#role57.ent22#att93"/>
   </Entity>
-  <Entity gr:x="1155" gr:y="335" id="ent3" name="Serie" duration="persistent" attributeOrder="ent3#att36 ent3#att37 ent3#att38 ent3#att39 ent3#att40 ent3#att41 ent3#att42 ent3#att43 ent3#att44 ent3#att45 ent3#att47 ent3#att48 ent3#att49 ent3#att50 ent3#att51 ent3#att78" db:database="db1" db:table="serie">
+  <Entity gr:x="1155" gr:y="335" id="ent3" name="Serie" duration="persistent" attributeOrder="ent3#att36 ent3#att37 ent3#att38 ent3#att39 ent3#att40 ent3#att41 ent3#att42 ent3#att43 ent3#att44 ent3#att45 ent3#att47 ent3#att48 ent3#att49 ent3#att50 ent3#att51 ent3#att78 ent3#att1" db:database="db1" db:table="serie">
     <Attribute id="ent3#att36" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent3#att37" name="titolo" type="string" db:column="titolo"/>
-    <Attribute id="ent3#att38" name="trama" type="text" db:column="trama"/>
-    <Attribute id="ent3#att39" name="genere" type="string" derivationQuery="simpleImported::Self.rel1#role1.ent17#att30"/>
-    <Attribute id="ent3#att40" name="lingua" type="string" derivationQuery="simpleImported::Self.rel2#role3.ent18#att32"/>
-    <Attribute id="ent3#att41" name="sottotitoli" type="string" db:column="sottotitoli"/>
-    <Attribute id="ent3#att42" name="cast" type="string" db:column="cast"/>
-    <Attribute id="ent3#att43" name="anno" type="integer" derivationQuery="simpleImported::Self.rel20#role39.ent19#att46"/>
-    <Attribute id="ent3#att44" name="et&#224; minima" type="integer" db:column="eta_minima"/>
-    <Attribute id="ent3#att45" name="stagioni" type="string" db:column="stagioni"/>
-    <Attribute id="ent3#att47" name="locandina" type="blob" db:column="locandina"/>
-    <Attribute id="ent3#att48" name="sfondo" type="blob" db:column="sfondo"/>
-    <Attribute id="ent3#att49" name="trailer" type="string" db:column="trailer"/>
-    <Attribute id="ent3#att50" name="valutazione della critica" type="float" db:column="valutazione_della_critica"/>
-    <Attribute id="ent3#att51" name="valutazione media" type="float" db:column="valutazione_media"/>
-    <Attribute id="ent3#att78" name="fascia_prezzo" type="boolean" derivationQuery="simpleImported::Self.rel25#role49.ent22#att93"/>
+    <Attribute id="ent3#att37" name="titolo" type="string" db:column="titolo" key="false"/>
+    <Attribute id="ent3#att38" name="trama" type="text" db:column="trama" key="false"/>
+    <Attribute id="ent3#att39" name="genere" type="string" derivationQuery="simpleImported::Self.rel1#role1.ent17#att30" key="false"/>
+    <Attribute id="ent3#att40" name="lingua" type="string" derivationQuery="simpleImported::Self.rel2#role3.ent18#att32" key="false"/>
+    <Attribute id="ent3#att41" name="sottotitoli" type="string" db:column="sottotitoli" key="false"/>
+    <Attribute id="ent3#att42" name="cast" type="string" db:column="cast" key="false"/>
+    <Attribute id="ent3#att43" name="anno" type="integer" derivationQuery="simpleImported::Self.rel20#role39.ent19#att46" key="false"/>
+    <Attribute id="ent3#att44" name="et&#224; minima" type="integer" db:column="eta_minima" key="false"/>
+    <Attribute id="ent3#att45" name="stagioni" type="string" db:column="stagioni" key="false"/>
+    <Attribute id="ent3#att47" name="locandina" type="blob" db:column="locandina" key="false"/>
+    <Attribute id="ent3#att48" name="sfondo" type="blob" db:column="sfondo" key="false"/>
+    <Attribute id="ent3#att49" name="trailer" type="string" db:column="trailer" key="false"/>
+    <Attribute id="ent3#att50" name="valutazione della critica" type="float" db:column="valutazione_della_critica" key="false"/>
+    <Attribute id="ent3#att51" name="valutazione media" type="float" db:column="valutazione_media" key="false"/>
+    <Attribute id="ent3#att78" name="fascia_prezzo" type="boolean" derivationQuery="simpleImported::Self.rel25#role49.ent22#att93" key="false"/>
+    <Attribute id="ent3#att1" name="Regista" type="string" derivationQuery="simpleImported::Self.rel3#role6.ent23#att81"/>
   </Entity>
   <Entity gr:x="820" gr:y="380" id="ent4" name="Episodio" duration="persistent" attributeOrder="ent4#att52 ent4#att53 ent4#att54 ent4#att56 ent4#att58 ent4#att59 ent4#att79" db:database="db1" db:table="episodio">
     <Attribute id="ent4#att52" key="true" name="oid" type="integer" db:column="oid"/>
@@ -345,12 +346,8 @@
     <Attribute id="ent23#att81" name="NomeCognome" type="string" db:column="nomecognome"/>
   </Entity>
   <Relationship id="rel31" name="Film_Regista" sourceEntity="ent2" targetEntity="ent23" gr:bendpoints="222,181,-467,-170;688,181,-1,-170" db:database="db1" db:table="film">
-    <RelationshipRole1 id="rel31#role61" name="FilmToRegista" maxCard="1">
-      <db:JoinColumn attribute="ent2#att2" name="oid"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel31#role62" name="RegistaToFilm" maxCard="N">
-      <db:JoinColumn attribute="ent23#att80" name="regista_oid"/>
-    </RelationshipRole2>
+    <RelationshipRole1 id="rel31#role61" name="FilmToRegista" maxCard="1"/>
+    <RelationshipRole2 id="rel31#role62" name="RegistaToFilm" maxCard="N"/>
   </Relationship>
   <Relationship id="rel32" name="Catalogo_generale_Film" sourceEntity="ent5" targetEntity="ent2" db:database="db1" db:table="film">
     <RelationshipRole1 id="rel32#role63" name="Catalogo_generaleToFilm" maxCard="N">
@@ -386,4 +383,8 @@
   </Relationship>
   <db:Database id="db1" name="MovieFlix" type="MySQL" url="jdbc:mysql://localhost/MovieFlix" username="root">
   </db:Database>
+  <Relationship id="rel3" name="Regista_Serie" sourceEntity="ent23" targetEntity="ent3" gr:bendpoints="-14,271,1541,411;-446,271,1109,411;-1278,239,277,379">
+    <RelationshipRole1 id="rel3#role5" name="RegistaToSerie" maxCard="N"/>
+    <RelationshipRole2 id="rel3#role6" name="SerieToRegista" maxCard="1"/>
+  </Relationship>
 </DataModel>

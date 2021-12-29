@@ -1,0 +1,54 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area5#page46" name="Pagina modifica dati personali" landmark="true" gr:x="250" gr:y="285">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area5#page46#enu27" name="Modifica dati profilo" linkOrder="sv3#area2#area5#page46#enu27#ln88" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area5#page46#enu27#fld92 sv3#area2#area5#page46#enu27#fld93 sv3#area2#area5#page46#enu27#fld94 sv3#area2#area5#page46#enu27#fld95 sv3#area2#area5#page46#enu27#fld96 sv3#area2#area5#page46#enu27#fld97">
+      <Field id="sv3#area2#area5#page46#enu27#fld92" name="nome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area2#area5#page46#enu27#fld93" name="cognome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area2#area5#page46#enu27#fld94" name="userName" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area2#area5#page46#enu27#fld95" name="password" type="password" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area2#area5#page46#enu27#fld96" name="email" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv3#area2#area5#page46#enu27#fld97" name="data di nascita" type="date" modifiable="true" preloaded="true"/>
+      <Link id="sv3#area2#area5#page46#enu27#ln88" name="Flow35" to="sv3#area2#area5#mfu15" type="normal" validate="true" gr:bendpoints="183,-15,-62,130">
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par341" name="nome_cognome" source="sv3#area2#area5#page46#enu27#fld93" target="sv3#area2#area5#mfu15.User#att103"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par342" name="email_data di nascita" source="sv3#area2#area5#page46#enu27#fld97" target="sv3#area2#area5#mfu15.User#att106"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par343" name="password_email" source="sv3#area2#area5#page46#enu27#fld95" target="sv3#area2#area5#mfu15.password"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par344" name="data di nascita_KeyCondition11 [oid]" sourceLinkParameter="sv3#area2#area5#page47#dau7#ln90#par357" target="sv3#area2#area5#mfu15#su38#kcond27.userOID"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par345" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv3#area2#area5#page47#dau7#ln90#par357" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par346" name="cognome_PASSING" source="sv3#area2#area5#page46#enu27#fld93" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par347" name="data di nascita_PASSING" source="sv3#area2#area5#page46#enu27#fld97" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par348" name="email_PASSING" source="sv3#area2#area5#page46#enu27#fld96" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par349" name="nome_PASSING" source="sv3#area2#area5#page46#enu27#fld92" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par350" name="password_PASSING" source="sv3#area2#area5#page46#enu27#fld95" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par351" name="userName_PASSING" source="sv3#area2#area5#page46#enu27#fld94" passing="true"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par352" name="nome_nome" source="sv3#area2#area5#page46#enu27#fld92" target="sv3#area2#area5#mfu15.User#att105"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par353" name="password_password" source="sv3#area2#area5#page46#enu27#fld94" target="sv3#area2#area5#mfu15.userName"/>
+        <LinkParameter id="sv3#area2#area5#page46#enu27#ln88#par354" name="userName_userName" source="sv3#area2#area5#page46#enu27#fld96" target="sv3#area2#area5#mfu15.email"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area5#page46#enu27">
+          <layout:Link link="sv3#area2#area5#page46#enu27#ln88"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld92"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld93"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld94"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld95"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld96"/>
+          <layout:Field field="sv3#area2#area5#page46#enu27#fld97"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

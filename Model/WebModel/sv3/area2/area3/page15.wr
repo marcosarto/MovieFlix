@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page15" name="Modifica Regista" gr:x="395" gr:y="10">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page15#enu11" name="Inserisci dati regista" linkOrder="sv3#area2#area3#page15#enu11#ln17" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page15#enu11#fld23">
+      <Link id="sv3#area2#area3#page15#enu11#ln17" name="Flow58" to="sv3#area2#area3#mfu7" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page15#enu11#ln17#par115" name="Nome_cognome_NomeCognome" source="sv3#area2#area3#page15#enu11#fld23" target="sv3#area2#area3#mfu7.ent23#att81"/>
+        <LinkParameter id="sv3#area2#area3#page15#enu11#ln17#par116" name="oid_PASSING_KeyCondition1 [oid]" sourceLinkParameter="sv3#area2#area3#page17#inu10#ln19#par121" target="sv3#area2#area3#mfu7#su3#kcond3.ent23#att80"/>
+      </Link>
+      <Field id="sv3#area2#area3#page15#enu11#fld23" name="Nome_cognome" type="string" modifiable="true" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page15#enu11">
+          <layout:Link link="sv3#area2#area3#page15#enu11#ln17"/>
+          <layout:Field field="sv3#area2#area3#page15#enu11#fld23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

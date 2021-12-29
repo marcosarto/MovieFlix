@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page14" name="Pagina gestione Lingua" linkOrder="sv3#area2#area3#page14#ln16" landmark="true" gr:x="5" gr:y="415">
+  <ContentUnits>
+    <IndexUnit id="sv3#area2#area3#page14#inu9" name="Lista Lingue" linkOrder="sv3#area2#area3#page14#inu9#ln14 sv3#area2#area3#page14#inu9#ln15" gr:x="0" gr:y="0" entity="ent18" displayAttributes="ent18#att32">
+      <Link id="sv3#area2#area3#page14#inu9#ln14" name="Flow57" to="sv3#area2#area3#page10#enu7" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page14#inu9#ln14#par113" name="lingua_Lingua" source="data[].ent18#att32" target="sv3#area2#area3#page10#enu7#fld15_slot"/>
+        <LinkParameter id="sv3#area2#area3#page14#inu9#ln14#par114" name="oid_PASSING" source="data[].ent18#att31" passing="true"/>
+      </Link>
+      <Link id="sv3#area2#area3#page14#inu9#ln15" name="Flow59" to="sv3#area2#area3#dlu10" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page14#inu9">
+          <layout:Link link="sv3#area2#area3#page14#inu9#ln14"/>
+          <layout:Link link="sv3#area2#area3#page14#inu9#ln15"/>
+          <layout:Attribute attribute="ent18#att32"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area2#area3#page14#ln16" name="CreaLingua" to="sv3#area2#area3#page6" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

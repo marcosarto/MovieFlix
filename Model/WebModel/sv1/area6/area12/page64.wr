@@ -1,0 +1,64 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area12#page64" name="Pagina ricerca contenuto Film" landmark="true" gr:x="130" gr:y="775">
+  <ContentUnits>
+    <EntryUnit id="sv1#area6#area12#page64#enu33" name="Ricerca Contenuto" linkOrder="sv1#area6#area12#page64#enu33#ln102" gr:x="20" gr:y="0" fieldOrder="sv1#area6#area12#page64#enu33#fld116 sv1#area6#area12#page64#enu33#sfld43">
+      <SelectionField id="sv1#area6#area12#page64#enu33#sfld43" name="Ricerca per:" type="string" modifiable="true">
+        <Slot id="sv1#area6#area12#page64#enu33#sfld43#slot4" name="opzioni" label="true" output="true" value="regista|fascia|lingua|genere|anno"/>
+      </SelectionField>
+      <Field id="sv1#area6#area12#page64#enu33#fld116" name="Parola_chiave" type="string" modifiable="true"/>
+      <Link id="sv1#area6#area12#page64#enu33#ln102" name="Flow4" to="sv1#area6#area12#switch3" type="normal" validate="true">
+        <LinkParameter id="sv1#area6#area12#page64#enu33#ln102#par429" name="Ricerca per:_Switch" source="sv1#area6#area12#page64#enu33#sfld43" target="sv1#area6#area12#switch3.switch"/>
+        <LinkParameter id="sv1#area6#area12#page64#enu33#ln102#par430" name="Parola_chiave_PASSING" source="sv1#area6#area12#page64#enu33#fld116" passing="true"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area12#page64#enu33">
+          <layout:Field field="sv1#area6#area12#page64#enu33#fld116"/>
+          <layout:Field field="sv1#area6#area12#page64#enu33#sfld43"/>
+          <layout:Link link="sv1#area6#area12#page64#enu33#ln102"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

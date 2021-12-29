@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page13" name="Crea Data" gr:x="385" gr:y="1255">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page13#enu10" name="Inserisci dati Data" linkOrder="sv3#area2#area3#page13#enu10#ln13" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page13#enu10#fld22 sv3#area2#area3#page13#enu10#fld21 sv3#area2#area3#page13#enu10#fld20">
+      <Link id="sv3#area2#area3#page13#enu10#ln13" name="Flow56" to="sv3#area2#area3#cru9" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page13#enu10#ln13#par110" name="anno_anno" source="sv3#area2#area3#page13#enu10#fld22" target="sv3#area2#area3#cru9.ent19#att46"/>
+        <LinkParameter id="sv3#area2#area3#page13#enu10#ln13#par111" name="giorno_giorno" source="sv3#area2#area3#page13#enu10#fld20" target="sv3#area2#area3#cru9.ent19#att34"/>
+        <LinkParameter id="sv3#area2#area3#page13#enu10#ln13#par112" name="mese_mese" source="sv3#area2#area3#page13#enu10#fld21" target="sv3#area2#area3#cru9.ent19#att35"/>
+      </Link>
+      <Field id="sv3#area2#area3#page13#enu10#fld20" name="giorno" type="integer" modifiable="true"/>
+      <Field id="sv3#area2#area3#page13#enu10#fld21" name="mese" type="integer" modifiable="true"/>
+      <Field id="sv3#area2#area3#page13#enu10#fld22" name="anno" type="integer" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page13#enu10">
+          <layout:Link link="sv3#area2#area3#page13#enu10#ln13"/>
+          <layout:Field field="sv3#area2#area3#page13#enu10#fld22"/>
+          <layout:Field field="sv3#area2#area3#page13#enu10#fld21"/>
+          <layout:Field field="sv3#area2#area3#page13#enu10#fld20"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

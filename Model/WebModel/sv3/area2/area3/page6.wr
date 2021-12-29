@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page6" name="Crea Lingua" gr:x="395" gr:y="585">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page6#enu4" name="Inserisci dati Lingua" linkOrder="sv3#area2#area3#page6#enu4#ln4" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page6#enu4#fld12">
+      <Link id="sv3#area2#area3#page6#enu4#ln4" name="Flow56" to="sv3#area2#area3#cru5" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page6#enu4#ln4#par95" name="Lingua_lingua" source="sv3#area2#area3#page6#enu4#fld12" target="sv3#area2#area3#cru5.ent18#att32"/>
+      </Link>
+      <Field id="sv3#area2#area3#page6#enu4#fld12" name="Lingua" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page6#enu4">
+          <layout:Link link="sv3#area2#area3#page6#enu4#ln4"/>
+          <layout:Field field="sv3#area2#area3#page6#enu4#fld12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

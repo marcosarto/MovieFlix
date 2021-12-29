@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page9" name="Modifica Genere" gr:x="460" gr:y="755">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page9#enu6" name="Inserisci dati Genere" linkOrder="sv3#area2#area3#page9#enu6#ln9" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page9#enu6#fld14">
+      <Link id="sv3#area2#area3#page9#enu6#ln9" name="Flow58" to="sv3#area2#area3#mfu9" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page9#enu6#ln9#par101" name="Genere_categoria" source="sv3#area2#area3#page9#enu6#fld14" target="sv3#area2#area3#mfu9.ent17#att30"/>
+        <LinkParameter id="sv3#area2#area3#page9#enu6#ln9#par102" name="oid_PASSING_KeyCondition1 [oid]" sourceLinkParameter="sv3#area2#area3#page20#inu12#ln25#par128" target="sv3#area2#area3#mfu9#su8#kcond8.ent17#att25"/>
+      </Link>
+      <Field id="sv3#area2#area3#page9#enu6#fld14" name="Genere" type="string" modifiable="true" preloaded="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page9#enu6">
+          <layout:Link link="sv3#area2#area3#page9#enu6#ln9"/>
+          <layout:Field field="sv3#area2#area3#page9#enu6#fld14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

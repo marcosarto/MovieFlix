@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#area3#page5" name="Crea Fascia" gr:x="465" gr:y="1705">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#area3#page5#enu3" name="Inserisci dati fascia" linkOrder="sv3#area2#area3#page5#enu3#ln3" gr:x="0" gr:y="0" fieldOrder="sv3#area2#area3#page5#enu3#fld11 sv3#area2#area3#page5#enu3#fld10 sv3#area2#area3#page5#enu3#fld9">
+      <Link id="sv3#area2#area3#page5#enu3#ln3" name="Flow56" to="sv3#area2#area3#cru10" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#area3#page5#enu3#ln3#par92" name="fascia_prezzo_fascia_prezzo" source="sv3#area2#area3#page5#enu3#fld11" target="sv3#area2#area3#cru10.ent22#att93"/>
+        <LinkParameter id="sv3#area2#area3#page5#enu3#ln3#par93" name="prezzo_acquisto_prezzo_acquisto" source="sv3#area2#area3#page5#enu3#fld10" target="sv3#area2#area3#cru10.ent22#att91"/>
+        <LinkParameter id="sv3#area2#area3#page5#enu3#ln3#par94" name="prezzo_noleggio_prezzo_noleggio" source="sv3#area2#area3#page5#enu3#fld9" target="sv3#area2#area3#cru10.ent22#att92"/>
+      </Link>
+      <Field id="sv3#area2#area3#page5#enu3#fld9" name="prezzo_noleggio" type="string" modifiable="true"/>
+      <Field id="sv3#area2#area3#page5#enu3#fld10" name="prezzo_acquisto" type="string" modifiable="true"/>
+      <Field id="sv3#area2#area3#page5#enu3#fld11" name="fascia_prezzo" type="boolean" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#area3#page5#enu3">
+          <layout:Link link="sv3#area2#area3#page5#enu3#ln3"/>
+          <layout:Field field="sv3#area2#area3#page5#enu3#fld11"/>
+          <layout:Field field="sv3#area2#area3#page5#enu3#fld10"/>
+          <layout:Field field="sv3#area2#area3#page5#enu3#fld9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
